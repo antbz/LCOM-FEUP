@@ -3,3 +3,4 @@ crack/
 **/old/
 **/.svn/
 **/.vscode/
+*.o
