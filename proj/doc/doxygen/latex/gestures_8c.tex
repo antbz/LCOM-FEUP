@@ -1,0 +1,85 @@
+\hypertarget{gestures_8c}{}\section{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/gestures.c File Reference}
+\label{gestures_8c}\index{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/gestures.\+c@{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/gestures.\+c}}
+{\ttfamily \#include \char`\"{}../headers/gestures.\+h\char`\"{}}\newline
+Include dependency graph for gestures.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gestures_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{gestures_8c_abc077a92bad72289e516530793970df3}{check\+\_\+cutting} (\hyperlink{structmouse__event}{mouse\+\_\+event} event, double $\ast$slope, uint16\+\_\+t $\ast$x\+\_\+i, uint16\+\_\+t $\ast$y\+\_\+i, uint16\+\_\+t $\ast$x\+\_\+f, uint16\+\_\+t $\ast$y\+\_\+f)
+\begin{DoxyCompactList}\small\item\em Event handler for mouse cutting gesture. \end{DoxyCompactList}\item 
+\hyperlink{structmouse__event}{mouse\+\_\+event} \hyperlink{gestures_8c_ab352906803b84f653e5ba64fd7eee53a}{detect\+\_\+mouse\+\_\+event} (struct packet $\ast$\hyperlink{proj_8c_a26e83eca70c2b9169fbbb0eac7e32e32}{pp}, \hyperlink{structFruit}{Fruit} $\ast$\hyperlink{proj_8c_ab5a2fa8bb9de35bb1854492bfa9ee515}{mouse\+\_\+pointer}, double $\ast$slope, uint16\+\_\+t tolerance)
+\begin{DoxyCompactList}\small\item\em Event detector for mouse cutting gesture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{gestures_8h_a6ab3d6c199d4a2d7945eff8cbec931cf}{mouse\+\_\+state\+\_\+t} \hyperlink{gestures_8c_a6fd7f9aee5ea8b280cd794534218f943}{cutting\+\_\+state} = \hyperlink{gestures_8h_a6ab3d6c199d4a2d7945eff8cbec931cfa0cb1b2c6a7db1f1084886c98909a3f36}{I\+N\+IT}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{gestures_8c_abc077a92bad72289e516530793970df3}\label{gestures_8c_abc077a92bad72289e516530793970df3}} 
+\index{gestures.\+c@{gestures.\+c}!check\+\_\+cutting@{check\+\_\+cutting}}
+\index{check\+\_\+cutting@{check\+\_\+cutting}!gestures.\+c@{gestures.\+c}}
+\subsubsection{\texorpdfstring{check\+\_\+cutting()}{check\_cutting()}}
+{\footnotesize\ttfamily void check\+\_\+cutting (\begin{DoxyParamCaption}\item[{\hyperlink{structmouse__event}{mouse\+\_\+event}}]{event,  }\item[{double $\ast$}]{slope,  }\item[{uint16\+\_\+t $\ast$}]{x\+\_\+i,  }\item[{uint16\+\_\+t $\ast$}]{y\+\_\+i,  }\item[{uint16\+\_\+t $\ast$}]{x\+\_\+f,  }\item[{uint16\+\_\+t $\ast$}]{y\+\_\+f }\end{DoxyParamCaption})}
+
+
+
+Event handler for mouse cutting gesture. 
+
+Changes the state of the mouse cutting gesture state according to the parameters recieved.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & the mouse event that was last detected. \\
+\hline
+{\em slope} & the slope of the drawn line \\
+\hline
+{\em x\+\_\+i} & the initial horizontal position of the drawn line. \\
+\hline
+{\em y\+\_\+i} & the initial vertical position of the drawn line. \\
+\hline
+{\em x\+\_\+f} & the final horizontal position of the drawn line. \\
+\hline
+{\em y\+\_\+f} & the final vertical position of the drawn line. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gestures_8c_ab352906803b84f653e5ba64fd7eee53a}\label{gestures_8c_ab352906803b84f653e5ba64fd7eee53a}} 
+\index{gestures.\+c@{gestures.\+c}!detect\+\_\+mouse\+\_\+event@{detect\+\_\+mouse\+\_\+event}}
+\index{detect\+\_\+mouse\+\_\+event@{detect\+\_\+mouse\+\_\+event}!gestures.\+c@{gestures.\+c}}
+\subsubsection{\texorpdfstring{detect\+\_\+mouse\+\_\+event()}{detect\_mouse\_event()}}
+{\footnotesize\ttfamily \hyperlink{structmouse__event}{mouse\+\_\+event} detect\+\_\+mouse\+\_\+event (\begin{DoxyParamCaption}\item[{struct packet $\ast$}]{pp,  }\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{mouse\+\_\+pointer,  }\item[{double $\ast$}]{slope,  }\item[{uint16\+\_\+t}]{tolerance }\end{DoxyParamCaption})}
+
+
+
+Event detector for mouse cutting gesture. 
+
+Detects what mouse event happened in the recieved packet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & a pointer to the mouse interrupt packet from the mouse interruption. \\
+\hline
+{\em mouse\+\_\+pointer} & a pointr to the mouse pointer sprite for positional information. \\
+\hline
+{\em slope} & a pointer to the double where to store the drawn line slope. \\
+\hline
+{\em tolerance} & an arbitrary tolerance for line drawing. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{gestures_8c_a6fd7f9aee5ea8b280cd794534218f943}\label{gestures_8c_a6fd7f9aee5ea8b280cd794534218f943}} 
+\index{gestures.\+c@{gestures.\+c}!cutting\+\_\+state@{cutting\+\_\+state}}
+\index{cutting\+\_\+state@{cutting\+\_\+state}!gestures.\+c@{gestures.\+c}}
+\subsubsection{\texorpdfstring{cutting\+\_\+state}{cutting\_state}}
+{\footnotesize\ttfamily enum \hyperlink{gestures_8h_a6ab3d6c199d4a2d7945eff8cbec931cf}{mouse\+\_\+state\+\_\+t} cutting\+\_\+state = \hyperlink{gestures_8h_a6ab3d6c199d4a2d7945eff8cbec931cfa0cb1b2c6a7db1f1084886c98909a3f36}{I\+N\+IT}}
+

@@ -1,0 +1,4 @@
+<map id="Screen" name="Screen">
+<area shape="rect" id="node2" href="$structFruitBasket.html" title="Container for objects of Fruit* type. " alt="" coords="5,95,95,121"/>
+<area shape="rect" id="node3" href="$structFruit.html" title="Sprite&#45;like struct used for displaying fruits and other elements. " alt="" coords="26,5,74,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="clear_screen_background" name="clear_screen_background">
+<area shape="rect" id="node2" href="$videocard_8c.html#a2761af8b4bd131a1673b5c546f43d4c9" title="Draws a xpm image on the screen. " alt="" coords="224,5,307,32"/>
+<area shape="rect" id="node3" href="$videocard_8c.html#a5e0b5e6936836b0e25a5a5a628dbf4d3" title="Sets a pixel to a specified color. " alt="" coords="355,5,429,32"/>
+<area shape="rect" id="node4" href="$videocard_8c.html#ab8ef76c609c4580f3aa64707fa7c33b7" title="Checks if the coordinates of the pixel are inside the screen. " alt="" coords="477,5,556,32"/>
+</map>

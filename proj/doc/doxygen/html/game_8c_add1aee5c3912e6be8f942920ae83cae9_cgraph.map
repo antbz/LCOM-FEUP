@@ -1,0 +1,17 @@
+<map id="spectatorHandler" name="spectatorHandler">
+<area shape="rect" id="node2" href="$fruit_8h.html#a7a4dead7cbd3f3f8945528a9061f49fd" title="Clears a FruitBasket. " alt="" coords="197,5,323,32"/>
+<area shape="rect" id="node4" href="$fruit_8h.html#ac4cf4b96c22296dc7869b6801073bdf8" title="Inserts a new Fruit in the FruitBasket specified. " alt="" coords="224,56,296,83"/>
+<area shape="rect" id="node6" href="$fruit_8h.html#a779953c82daeeb6cb08615ebeb677d43" title="Fruit constructor. " alt="" coords="218,107,302,133"/>
+<area shape="rect" id="node7" href="$videocard_8h.html#a3ef4e6aa5eed9ea4aa5a2ba6ae3712b5" title="Gets the screen&#39;s y resolution. " alt="" coords="221,157,299,184"/>
+<area shape="rect" id="node8" href="$serialport_8h.html#ac931570e6dd48ab5f285867c8903916a" title="Transmits byte to serial port. " alt="" coords="189,208,331,235"/>
+<area shape="rect" id="node9" href="$videocard_8h.html#abc52bd17c62214c39a53ab1484fedb88" title="Gets the screen&#39;s x resolution. " alt="" coords="221,259,299,285"/>
+<area shape="rect" id="node10" href="$videocard_8h.html#a344946a738b47b528fa6bb32ada17b8e" title="Clears the screen with a background. " alt="" coords="175,309,345,336"/>
+<area shape="rect" id="node14" href="$fruit_8h.html#a7c331c1195fbc5a1fc4b39b96c539b6d" title="Updates the positon of a Fruit and displays it. " alt="" coords="219,360,301,387"/>
+<area shape="rect" id="node3" href="$fruit_8c.html#a1bb643fa94cfda951845904206eac674" title="Fruit destructor. " alt="" coords="393,5,484,32"/>
+<area shape="rect" id="node5" href="$fruit_8c.html#ac7a91b2e2080e787f8d80cf70b94ac72" title="Finds next empty postion in a FruitBasket. " alt="" coords="401,56,476,83"/>
+<area shape="rect" id="node11" href="$videocard_8c.html#a2761af8b4bd131a1673b5c546f43d4c9" title="Draws a xpm image on the screen. " alt="" coords="532,309,615,336"/>
+<area shape="rect" id="node12" href="$videocard_8c.html#a5e0b5e6936836b0e25a5a5a628dbf4d3" title="Sets a pixel to a specified color. " alt="" coords="663,335,737,361"/>
+<area shape="rect" id="node13" href="$videocard_8c.html#ab8ef76c609c4580f3aa64707fa7c33b7" title="Checks if the coordinates of the pixel are inside the screen. " alt="" coords="785,335,864,361"/>
+<area shape="rect" id="node15" href="$fruit_8c.html#ae065cf14eba5c8735cd7c1421abbbc10" title="Displays a Fruit. " alt="" coords="399,360,478,387"/>
+<area shape="rect" id="node16" href="$videocard_8h.html#a2761af8b4bd131a1673b5c546f43d4c9" title="Draws a xpm image on the screen. " alt="" coords="532,360,615,387"/>
+</map>

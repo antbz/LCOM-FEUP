@@ -1,0 +1,51 @@
+<map id="proj_main_loop" name="proj_main_loop">
+<area shape="rect" id="node2" href="$videocard_8h.html#ae2f0d8493cb002947433bd66e1433478" title="Maps video memory for specified mode. " alt="" coords="193,5,315,32"/>
+<area shape="rect" id="node4" href="$videocard_8h.html#afb4146df5590405404a911e802644f82" title="Sets the VBE mode. " alt="" coords="201,56,307,83"/>
+<area shape="rect" id="node5" href="$serialport_8h.html#a9acdc832669b0d350f825e66d152531c" title="Serial Port interrupt subscription. " alt="" coords="185,107,323,133"/>
+<area shape="rect" id="node6" href="$rtc_8h.html#a10955a7f54931b66c81bec3675a0d116" title="Subscribes RTC&#39;s interrupts. " alt="" coords="204,157,304,184"/>
+<area shape="rect" id="node7" href="$keyboard_8h.html#a15cd0b00a8f834d25bbd39ea9c0519ea" title="Subscribes keyboard&#39;s interrupts. " alt="" coords="201,208,307,235"/>
+<area shape="rect" id="node8" href="$timer_8c.html#ac57a7e1140a7e00ad95ac5488d2a671b" title="timer_subscribe_int" alt="" coords="187,259,321,285"/>
+<area shape="rect" id="node9" href="$mouse_8h.html#a757e4b5da5f470b256711c025c8f6c9e" title="Subscribes mouse&#39;s interrupts. " alt="" coords="192,309,316,336"/>
+<area shape="rect" id="node10" href="$mouse_8h.html#a22e7aa936a38417be07fc29cf34cfd05" title="Disables mouse&#39;s interrupts. " alt="" coords="199,360,309,387"/>
+<area shape="rect" id="node11" href="$mouse_8h.html#a2a3721c1f7166d799c22092fdb38ec00" title="Writes command. " alt="" coords="190,1171,318,1197"/>
+<area shape="rect" id="node14" href="$mouse_8h.html#ad8f082d47fa7bde0306eb3b82b6127e9" title="Enables mouse&#39;s interrupts. " alt="" coords="201,461,307,488"/>
+<area shape="rect" id="node15" href="$images_8h.html#a63105b196ba9a9ea6cb99138b133d423" title="Loads all included xpm images to the game_images and digits array. " alt="" coords="197,512,311,539"/>
+<area shape="rect" id="node16" href="$fruit_8h.html#a779953c82daeeb6cb08615ebeb677d43" title="Fruit constructor. " alt="" coords="655,651,739,677"/>
+<area shape="rect" id="node17" href="$game_8h.html#a1bf5813a33bf062c7e0ac95af442e41a" title="Screen constructor for main menu. " alt="" coords="197,613,311,640"/>
+<area shape="rect" id="node24" href="$game_8h.html#a4ad803c608996c82d21043e91f4d81ec" title="Screen constructor for single palyer game. " alt="" coords="174,411,334,437"/>
+<area shape="rect" id="node26" href="$game_8h.html#ac84a9b465ad4cf463622ab658cda7b73" title="Screen constructor for end screen. " alt="" coords="163,563,345,589"/>
+<area shape="rect" id="node28" href="$game_8h.html#a62f4e2fda4beca3af3a7edd5415da1e8" title="Screen constructor for help screen. " alt="" coords="197,664,311,691"/>
+<area shape="rect" id="node30" href="$game_8h.html#a23f3019c26e624be6427b3729ec8f853" title="Screen constructor for multi player game (Player side). " alt="" coords="178,715,330,741"/>
+<area shape="rect" id="node34" href="$game_8h.html#a6d3c6f011914ce84172b8d968338b921" title="Screen constructor for multi player game (Spectator side). " alt="" coords="183,765,325,792"/>
+<area shape="rect" id="node36" href="$keyboard_8c.html#a5761bd4aad91ac1d68916ad88f583d9f" title="kbc_ih" alt="" coords="224,1069,284,1096"/>
+<area shape="rect" id="node38" href="$timer_8c.html#a91a2072306c68353712a6b771287dc2c" title="timer_int_handler" alt="" coords="193,968,315,995"/>
+<area shape="rect" id="node39" href="$videocard_8h.html#a177220e5ecf81c6bbc29027576d39194" title="Refreshes the video card buffer. " alt="" coords="203,1019,305,1045"/>
+<area shape="rect" id="node40" href="$mouse_8h.html#a210374b50462acdedab00df64d5cea3c" title="Mouse interrupt handler. " alt="" coords="215,867,293,893"/>
+<area shape="rect" id="node41" href="$rtc_8h.html#a334675ca0bb5774edf48f71353539242" title="Creates a seed to generate random numbers. " alt="" coords="189,1120,319,1147"/>
+<area shape="rect" id="node42" href="$serialport_8h.html#a9353fabdd05ea291e02243dace57ae1c" title="Serial port interrupt handler. " alt="" coords="225,1221,283,1248"/>
+<area shape="rect" id="node44" href="$screen_8h.html#a5297c4c7c2e0bae983cad4339a543efc" title="Screen destructor. " alt="" coords="201,1487,307,1513"/>
+<area shape="rect" id="node46" href="$serialport_8h.html#aea490e3f6d6aadfd53621f367a1448e0" title="Serial port interrupt unsubscription. " alt="" coords="178,1272,330,1299"/>
+<area shape="rect" id="node47" href="$rtc_8h.html#a5044355ac16d65a75a879527aef33781" title="Unsubscribes RTC&#39;s interrupts. " alt="" coords="197,1323,311,1349"/>
+<area shape="rect" id="node48" href="$keyboard_8h.html#a73757077133b7fe559d036ce133bcda5" title="Unsubscribes keyboard&#39;s interrupts. " alt="" coords="194,1373,314,1400"/>
+<area shape="rect" id="node49" href="$timer_8c.html#afabd21de449be154dd65d5fdb2d8045d" title="timer_unsubscribe_int" alt="" coords="179,1424,329,1451"/>
+<area shape="rect" id="node50" href="$mouse_8h.html#aa228574f5c512312c12da4637d3abb45" title="Unsubscribes mouse&#39;s interrupts. " alt="" coords="185,917,323,944"/>
+<area shape="rect" id="node3" href="$videocard_8c.html#a3894d39378657dc7b344e8322aae4372" title="vbe_mode_info" alt="" coords="423,5,534,32"/>
+<area shape="rect" id="node12" href="$mouse_8c.html#a82f07d6118c32948ba44ced307f66748" title="Reads the mouse state. " alt="" coords="398,1157,559,1184"/>
+<area shape="rect" id="node13" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="652,1284,743,1311"/>
+<area shape="rect" id="node18" href="$fruit_8h.html#a101df9ac2f3cbb42e381fc7700e45716" title="FruitBasket constructor. " alt="" coords="416,549,541,576"/>
+<area shape="rect" id="node19" href="$screen_8h.html#a5d33bf5b50f987837d4e11d97bca29f2" title="Screen constructor. " alt="" coords="429,499,528,525"/>
+<area shape="rect" id="node20" href="$game_8c.html#a8e4f41d9fe634c39863954d74490074f" title="Interrupt handler for main Menu. " alt="" coords="415,296,542,323"/>
+<area shape="rect" id="node21" href="$videocard_8h.html#a344946a738b47b528fa6bb32ada17b8e" title="Clears the screen with a background. " alt="" coords="612,347,783,373"/>
+<area shape="rect" id="node22" href="$fruit_8h.html#a7c331c1195fbc5a1fc4b39b96c539b6d" title="Updates the positon of a Fruit and displays it. " alt="" coords="656,296,739,323"/>
+<area shape="rect" id="node23" href="$line_8h.html#ab1fa6364c37a6458a86e755e23b91555" title="line_t constructor. " alt="" coords="657,245,738,272"/>
+<area shape="rect" id="node25" href="$game_8c.html#ab9425dfa11d5f49764746b3670cbd3b6" title="Interrupt handler for single player mode. " alt="" coords="393,195,564,221"/>
+<area shape="rect" id="node27" href="$game_8c.html#a0d2ebbf7353b134a4743b8d209c20b12" title="Interrupt handler for single player end screen. " alt="" coords="398,245,559,272"/>
+<area shape="rect" id="node29" href="$game_8c.html#aacf3ff3af8a592207d422440f5921b89" title="Interrupt handler for help screen. " alt="" coords="433,347,524,373"/>
+<area shape="rect" id="node31" href="$fruit_8h.html#ac4cf4b96c22296dc7869b6801073bdf8" title="Inserts a new Fruit in the FruitBasket specified. " alt="" coords="661,828,733,855"/>
+<area shape="rect" id="node32" href="$videocard_8h.html#a3ef4e6aa5eed9ea4aa5a2ba6ae3712b5" title="Gets the screen&#39;s y resolution. " alt="" coords="658,955,737,981"/>
+<area shape="rect" id="node33" href="$game_8c.html#a6d44d81782d12027069bb5e04eb2eb00" title="Interrupt handler for multi player. " alt="" coords="413,651,545,677"/>
+<area shape="rect" id="node35" href="$game_8c.html#add1aee5c3912e6be8f942920ae83cae9" title="Interrupt handler for spectator. " alt="" coords="418,803,539,829"/>
+<area shape="rect" id="node37" href="$keyboard_8c.html#a9d17da4ed398d7cd4b3462ec31585cce" title="Reads the KBC state. " alt="" coords="407,1259,550,1285"/>
+<area shape="rect" id="node43" href="$serialport_8c.html#a6942cce80358a0c3274122304686a906" title="read_ser_lsr" alt="" coords="432,1461,525,1488"/>
+<area shape="rect" id="node45" href="$fruit_8h.html#afd70dea1365750e5bda54a38c651879c" title="FruitBasket destructor. " alt="" coords="413,1512,545,1539"/>
+</map>

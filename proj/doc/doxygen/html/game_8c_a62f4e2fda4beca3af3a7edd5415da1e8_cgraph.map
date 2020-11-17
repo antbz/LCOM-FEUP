@@ -1,0 +1,28 @@
+<map id="loadHelpScreen" name="loadHelpScreen">
+<area shape="rect" id="node2" href="$fruit_8h.html#a101df9ac2f3cbb42e381fc7700e45716" title="FruitBasket constructor. " alt="" coords="168,44,293,71"/>
+<area shape="rect" id="node3" href="$fruit_8h.html#a779953c82daeeb6cb08615ebeb677d43" title="Fruit constructor. " alt="" coords="385,5,469,32"/>
+<area shape="rect" id="node4" href="$screen_8h.html#a5d33bf5b50f987837d4e11d97bca29f2" title="Screen constructor. " alt="" coords="181,145,280,172"/>
+<area shape="rect" id="node5" href="$game_8c.html#aacf3ff3af8a592207d422440f5921b89" title="Interrupt handler for help screen. " alt="" coords="185,284,276,311"/>
+<area shape="rect" id="node6" href="$videocard_8h.html#a344946a738b47b528fa6bb32ada17b8e" title="Clears the screen with a background. " alt="" coords="341,107,512,133"/>
+<area shape="rect" id="node10" href="$fruit_8h.html#a7c331c1195fbc5a1fc4b39b96c539b6d" title="Updates the positon of a Fruit and displays it. " alt="" coords="385,259,468,285"/>
+<area shape="rect" id="node13" href="$line_8h.html#ab1fa6364c37a6458a86e755e23b91555" title="line_t constructor. " alt="" coords="386,208,467,235"/>
+<area shape="rect" id="node14" href="$videocard_8h.html#a2ae7adc216c62dd6f2d12654afd944e6" title="Draws a line on the screen. " alt="" coords="709,157,787,184"/>
+<area shape="rect" id="node15" href="$fruit_8h.html#ab844298c6f0f476a963fef97d6e36eb3" title="Cuts all Fruits contained in a FruitBasket that a line_t intersects. " alt="" coords="371,309,482,336"/>
+<area shape="rect" id="node18" href="$line_8h.html#a41b18702398ce9f5ce937a1bdd741277" title="line_t destructor. " alt="" coords="381,360,473,387"/>
+<area shape="rect" id="node19" href="$fruit_8h.html#a09372da6f5d287df6536e79b952b3dfd" title="Removes a Fruit from the FruitBasket specified. " alt="" coords="379,411,474,437"/>
+<area shape="rect" id="node21" href="$fruit_8h.html#ae065cf14eba5c8735cd7c1421abbbc10" title="Displays a Fruit. " alt="" coords="570,461,649,488"/>
+<area shape="rect" id="node22" href="$mouse_8h.html#a30e8c7c85734629add7c3fa01006a904" title="Assembles the 3&#45;byte data packet. " alt="" coords="365,512,489,539"/>
+<area shape="rect" id="node23" href="$fruit_8h.html#a975e757ce467abc5ac6bd2c36393c1c7" title="Updates mouse&#45;pointer position. " alt="" coords="377,563,477,589"/>
+<area shape="rect" id="node26" href="$gestures_8h.html#ab352906803b84f653e5ba64fd7eee53a" title="Event detector for mouse cutting gesture. " alt="" coords="355,613,498,640"/>
+<area shape="rect" id="node27" href="$gestures_8h.html#abc077a92bad72289e516530793970df3" title="Event handler for mouse cutting gesture. " alt="" coords="375,56,478,83"/>
+<area shape="rect" id="node7" href="$videocard_8c.html#a2761af8b4bd131a1673b5c546f43d4c9" title="Draws a xpm image on the screen. " alt="" coords="707,107,789,133"/>
+<area shape="rect" id="node8" href="$videocard_8c.html#a5e0b5e6936836b0e25a5a5a628dbf4d3" title="Sets a pixel to a specified color. " alt="" coords="837,157,912,184"/>
+<area shape="rect" id="node9" href="$videocard_8c.html#ab8ef76c609c4580f3aa64707fa7c33b7" title="Checks if the coordinates of the pixel are inside the screen. " alt="" coords="960,157,1039,184"/>
+<area shape="rect" id="node11" href="$fruit_8c.html#ae065cf14eba5c8735cd7c1421abbbc10" title="Displays a Fruit. " alt="" coords="570,259,649,285"/>
+<area shape="rect" id="node12" href="$videocard_8h.html#a2761af8b4bd131a1673b5c546f43d4c9" title="Draws a xpm image on the screen. " alt="" coords="707,259,789,285"/>
+<area shape="rect" id="node16" href="$fruit_8c.html#a8464151d1f72af6dd4c8f4139676628f" title="Checks if a line_t intersects a Fruit. " alt="" coords="560,360,659,387"/>
+<area shape="rect" id="node17" href="$fruit_8c.html#aebe00723882a63b8e631a78bcab60d67" title="Cuts a Fruit. " alt="" coords="575,309,644,336"/>
+<area shape="rect" id="node20" href="$fruit_8c.html#a1bb643fa94cfda951845904206eac674" title="Fruit destructor. " alt="" coords="564,411,655,437"/>
+<area shape="rect" id="node24" href="$videocard_8h.html#abc52bd17c62214c39a53ab1484fedb88" title="Gets the screen&#39;s x resolution. " alt="" coords="570,588,649,615"/>
+<area shape="rect" id="node25" href="$videocard_8h.html#a3ef4e6aa5eed9ea4aa5a2ba6ae3712b5" title="Gets the screen&#39;s y resolution. " alt="" coords="570,537,649,564"/>
+</map>

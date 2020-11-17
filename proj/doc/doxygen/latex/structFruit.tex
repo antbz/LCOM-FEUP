@@ -1,0 +1,107 @@
+\hypertarget{structFruit}{}\section{Fruit Struct Reference}
+\label{structFruit}\index{Fruit@{Fruit}}
+
+
+Sprite-\/like struct used for displaying fruits and other elements.  
+
+
+
+
+{\ttfamily \#include $<$fruit.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structFruit_af2d21891aa444872c85b5477b063b0ff}{whole}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structFruit_aa5354964e7b2d36d50ec862395131f28}{chopped}
+\item 
+double \hyperlink{structFruit_a1b9c77d333911293a2c7ae9417608b40}{x\+\_\+pos}
+\item 
+double \hyperlink{structFruit_a569ebecee6a70958b552463a89e106ba}{y\+\_\+pos}
+\item 
+double \hyperlink{structFruit_a581a41a384b918c8c18116afc954d398}{x\+\_\+speed}
+\item 
+double \hyperlink{structFruit_a8e2b3a76e886f184b4845a2629f925b8}{y\+\_\+speed}
+\item 
+bool \hyperlink{structFruit_a17e2ee1928c9adf7aa06b9f82811b5a3}{is\+\_\+moving}
+\item 
+bool \hyperlink{structFruit_a1847b2662bc2eb7a8f427b69a4346fa7}{is\+\_\+chopped}
+\item 
+bool \hyperlink{structFruit_a8fb85e06a75c3455fd53cc7fa9243ce7}{has\+\_\+collided}
+\item 
+bool \hyperlink{structFruit_a4efa820e5e590d6f16062993452b7210}{is\+\_\+bomb}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Sprite-\/like struct used for displaying fruits and other elements. 
+
+Contains the images, positional and contextual information useful for drawing objects on the screen. Used for buttons, fruits and the mouse pointer. Contains two images to allow for easy switching between pressed down/released mouse/button states and whole/cut fruit states. The boolean members are used to decide which image to display and whether the object\textquotesingle{}s position should be updated or not. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structFruit_aa5354964e7b2d36d50ec862395131f28}\label{structFruit_aa5354964e7b2d36d50ec862395131f28}} 
+\index{Fruit@{Fruit}!chopped@{chopped}}
+\index{chopped@{chopped}!Fruit@{Fruit}}
+\subsubsection{\texorpdfstring{chopped}{chopped}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Fruit\+::chopped}
+
+Image for the \char`\"{}cut\char`\"{} state of the object. \mbox{\Hypertarget{structFruit_a8fb85e06a75c3455fd53cc7fa9243ce7}\label{structFruit_a8fb85e06a75c3455fd53cc7fa9243ce7}} 
+\index{Fruit@{Fruit}!has\+\_\+collided@{has\+\_\+collided}}
+\index{has\+\_\+collided@{has\+\_\+collided}!Fruit@{Fruit}}
+\subsubsection{\texorpdfstring{has\+\_\+collided}{has\_collided}}
+{\footnotesize\ttfamily bool Fruit\+::has\+\_\+collided}
+
+Stores if the fruit has collided against another one in the past \mbox{\Hypertarget{structFruit_a4efa820e5e590d6f16062993452b7210}\label{structFruit_a4efa820e5e590d6f16062993452b7210}} 
+\index{Fruit@{Fruit}!is\+\_\+bomb@{is\+\_\+bomb}}
+\index{is\+\_\+bomb@{is\+\_\+bomb}!Fruit@{Fruit}}
+\subsubsection{\texorpdfstring{is\+\_\+bomb}{is\_bomb}}
+{\footnotesize\ttfamily bool Fruit\+::is\+\_\+bomb}
+
+Distinguishes bombs from fruits. \mbox{\Hypertarget{structFruit_a1847b2662bc2eb7a8f427b69a4346fa7}\label{structFruit_a1847b2662bc2eb7a8f427b69a4346fa7}} 
+\index{Fruit@{Fruit}!is\+\_\+chopped@{is\+\_\+chopped}}
+\index{is\+\_\+chopped@{is\+\_\+chopped}!Fruit@{Fruit}}
+\subsubsection{\texorpdfstring{is\+\_\+chopped}{is\_chopped}}
+{\footnotesize\ttfamily bool Fruit\+::is\+\_\+chopped}
+
+Determines which image to draw the object as. \mbox{\Hypertarget{structFruit_a17e2ee1928c9adf7aa06b9f82811b5a3}\label{structFruit_a17e2ee1928c9adf7aa06b9f82811b5a3}} 
+\index{Fruit@{Fruit}!is\+\_\+moving@{is\+\_\+moving}}
+\index{is\+\_\+moving@{is\+\_\+moving}!Fruit@{Fruit}}
+\subsubsection{\texorpdfstring{is\+\_\+moving}{is\_moving}}
+{\footnotesize\ttfamily bool Fruit\+::is\+\_\+moving}
+
+Determines whether to update the object position according to speed and gravity or not. \mbox{\Hypertarget{structFruit_af2d21891aa444872c85b5477b063b0ff}\label{structFruit_af2d21891aa444872c85b5477b063b0ff}} 
+\index{Fruit@{Fruit}!whole@{whole}}
+\index{whole@{whole}!Fruit@{Fruit}}
+\subsubsection{\texorpdfstring{whole}{whole}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Fruit\+::whole}
+
+Image for the \char`\"{}whole\char`\"{} state of the object. \mbox{\Hypertarget{structFruit_a1b9c77d333911293a2c7ae9417608b40}\label{structFruit_a1b9c77d333911293a2c7ae9417608b40}} 
+\index{Fruit@{Fruit}!x\+\_\+pos@{x\+\_\+pos}}
+\index{x\+\_\+pos@{x\+\_\+pos}!Fruit@{Fruit}}
+\subsubsection{\texorpdfstring{x\+\_\+pos}{x\_pos}}
+{\footnotesize\ttfamily double Fruit\+::x\+\_\+pos}
+
+Horizontal postion of the top-\/left corner of the object. \mbox{\Hypertarget{structFruit_a581a41a384b918c8c18116afc954d398}\label{structFruit_a581a41a384b918c8c18116afc954d398}} 
+\index{Fruit@{Fruit}!x\+\_\+speed@{x\+\_\+speed}}
+\index{x\+\_\+speed@{x\+\_\+speed}!Fruit@{Fruit}}
+\subsubsection{\texorpdfstring{x\+\_\+speed}{x\_speed}}
+{\footnotesize\ttfamily double Fruit\+::x\+\_\+speed}
+
+Horizontal speed of the object in pixels/second \mbox{\Hypertarget{structFruit_a569ebecee6a70958b552463a89e106ba}\label{structFruit_a569ebecee6a70958b552463a89e106ba}} 
+\index{Fruit@{Fruit}!y\+\_\+pos@{y\+\_\+pos}}
+\index{y\+\_\+pos@{y\+\_\+pos}!Fruit@{Fruit}}
+\subsubsection{\texorpdfstring{y\+\_\+pos}{y\_pos}}
+{\footnotesize\ttfamily double Fruit\+::y\+\_\+pos}
+
+Vertical postion of the top-\/left corner of the object \mbox{\Hypertarget{structFruit_a8e2b3a76e886f184b4845a2629f925b8}\label{structFruit_a8e2b3a76e886f184b4845a2629f925b8}} 
+\index{Fruit@{Fruit}!y\+\_\+speed@{y\+\_\+speed}}
+\index{y\+\_\+speed@{y\+\_\+speed}!Fruit@{Fruit}}
+\subsubsection{\texorpdfstring{y\+\_\+speed}{y\_speed}}
+{\footnotesize\ttfamily double Fruit\+::y\+\_\+speed}
+
+Vertical speed of the object in pixels/second 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/headers/\hyperlink{fruit_8h}{fruit.\+h}\end{DoxyCompactItemize}

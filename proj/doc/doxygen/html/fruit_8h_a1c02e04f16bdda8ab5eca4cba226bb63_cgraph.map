@@ -1,0 +1,9 @@
+<map id="shoot_fruit" name="shoot_fruit">
+<area shape="rect" id="node2" href="$fruit_8c.html#ac4cf4b96c22296dc7869b6801073bdf8" title="Inserts a new Fruit in the FruitBasket specified. " alt="" coords="145,31,217,57"/>
+<area shape="rect" id="node4" href="$fruit_8c.html#a913c9d31bcc12f55ff2468f93a42ac89" title="Launches a Fruit from the bottom of the screen. " alt="" coords="136,107,225,133"/>
+<area shape="rect" id="node3" href="$fruit_8c.html#ac7a91b2e2080e787f8d80cf70b94ac72" title="Finds next empty postion in a FruitBasket. " alt="" coords="282,5,357,32"/>
+<area shape="rect" id="node5" href="$videocard_8h.html#abc52bd17c62214c39a53ab1484fedb88" title="Gets the screen&#39;s x resolution. " alt="" coords="280,56,359,83"/>
+<area shape="rect" id="node6" href="$fruit_8c.html#afec2bc0ac89269264bc9aed5c4d69f91" title="Fruit constructor for bombs. " alt="" coords="273,107,365,133"/>
+<area shape="rect" id="node7" href="$videocard_8h.html#a3ef4e6aa5eed9ea4aa5a2ba6ae3712b5" title="Gets the screen&#39;s y resolution. " alt="" coords="280,157,359,184"/>
+<area shape="rect" id="node8" href="$fruit_8c.html#aa70662fbdfb806ceaedc7f3a449adf84" title="Fruit constructor. " alt="" coords="277,208,361,235"/>
+</map>

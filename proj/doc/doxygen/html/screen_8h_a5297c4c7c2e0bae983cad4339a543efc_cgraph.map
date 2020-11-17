@@ -1,0 +1,4 @@
+<map id="destroyScreen" name="destroyScreen">
+<area shape="rect" id="node2" href="$fruit_8h.html#afd70dea1365750e5bda54a38c651879c" title="FruitBasket destructor. " alt="" coords="160,5,292,32"/>
+<area shape="rect" id="node3" href="$fruit_8c.html#a1bb643fa94cfda951845904206eac674" title="Fruit destructor. " alt="" coords="340,5,431,32"/>
+</map>

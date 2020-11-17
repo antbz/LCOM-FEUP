@@ -1,0 +1,25 @@
+<map id="helpHandler" name="helpHandler">
+<area shape="rect" id="node2" href="$videocard_8h.html#a344946a738b47b528fa6bb32ada17b8e" title="Clears the screen with a background. " alt="" coords="144,5,315,32"/>
+<area shape="rect" id="node6" href="$fruit_8h.html#a7c331c1195fbc5a1fc4b39b96c539b6d" title="Updates the positon of a Fruit and displays it. " alt="" coords="188,157,271,184"/>
+<area shape="rect" id="node9" href="$line_8h.html#ab1fa6364c37a6458a86e755e23b91555" title="line_t constructor. " alt="" coords="189,107,270,133"/>
+<area shape="rect" id="node10" href="$videocard_8h.html#a2ae7adc216c62dd6f2d12654afd944e6" title="Draws a line on the screen. " alt="" coords="512,56,589,83"/>
+<area shape="rect" id="node11" href="$fruit_8h.html#ab844298c6f0f476a963fef97d6e36eb3" title="Cuts all Fruits contained in a FruitBasket that a line_t intersects. " alt="" coords="174,208,285,235"/>
+<area shape="rect" id="node14" href="$line_8h.html#a41b18702398ce9f5ce937a1bdd741277" title="line_t destructor. " alt="" coords="183,259,275,285"/>
+<area shape="rect" id="node15" href="$fruit_8h.html#a779953c82daeeb6cb08615ebeb677d43" title="Fruit constructor. " alt="" coords="187,309,271,336"/>
+<area shape="rect" id="node16" href="$fruit_8h.html#a09372da6f5d287df6536e79b952b3dfd" title="Removes a Fruit from the FruitBasket specified. " alt="" coords="182,360,277,387"/>
+<area shape="rect" id="node18" href="$fruit_8h.html#ae065cf14eba5c8735cd7c1421abbbc10" title="Displays a Fruit. " alt="" coords="373,411,451,437"/>
+<area shape="rect" id="node19" href="$mouse_8h.html#a30e8c7c85734629add7c3fa01006a904" title="Assembles the 3&#45;byte data packet. " alt="" coords="167,461,291,488"/>
+<area shape="rect" id="node20" href="$fruit_8h.html#a975e757ce467abc5ac6bd2c36393c1c7" title="Updates mouse&#45;pointer position. " alt="" coords="179,512,279,539"/>
+<area shape="rect" id="node23" href="$gestures_8h.html#ab352906803b84f653e5ba64fd7eee53a" title="Event detector for mouse cutting gesture. " alt="" coords="158,563,301,589"/>
+<area shape="rect" id="node24" href="$gestures_8h.html#abc077a92bad72289e516530793970df3" title="Event handler for mouse cutting gesture. " alt="" coords="178,613,281,640"/>
+<area shape="rect" id="node3" href="$videocard_8c.html#a2761af8b4bd131a1673b5c546f43d4c9" title="Draws a xpm image on the screen. " alt="" coords="509,5,592,32"/>
+<area shape="rect" id="node4" href="$videocard_8c.html#a5e0b5e6936836b0e25a5a5a628dbf4d3" title="Sets a pixel to a specified color. " alt="" coords="640,56,715,83"/>
+<area shape="rect" id="node5" href="$videocard_8c.html#ab8ef76c609c4580f3aa64707fa7c33b7" title="Checks if the coordinates of the pixel are inside the screen. " alt="" coords="763,56,841,83"/>
+<area shape="rect" id="node7" href="$fruit_8c.html#ae065cf14eba5c8735cd7c1421abbbc10" title="Displays a Fruit. " alt="" coords="373,157,451,184"/>
+<area shape="rect" id="node8" href="$videocard_8h.html#a2761af8b4bd131a1673b5c546f43d4c9" title="Draws a xpm image on the screen. " alt="" coords="509,157,592,184"/>
+<area shape="rect" id="node12" href="$fruit_8c.html#a8464151d1f72af6dd4c8f4139676628f" title="Checks if a line_t intersects a Fruit. " alt="" coords="363,259,461,285"/>
+<area shape="rect" id="node13" href="$fruit_8c.html#aebe00723882a63b8e631a78bcab60d67" title="Cuts a Fruit. " alt="" coords="377,208,447,235"/>
+<area shape="rect" id="node17" href="$fruit_8c.html#a1bb643fa94cfda951845904206eac674" title="Fruit destructor. " alt="" coords="367,360,457,387"/>
+<area shape="rect" id="node21" href="$videocard_8h.html#abc52bd17c62214c39a53ab1484fedb88" title="Gets the screen&#39;s x resolution. " alt="" coords="373,537,451,564"/>
+<area shape="rect" id="node22" href="$videocard_8h.html#a3ef4e6aa5eed9ea4aa5a2ba6ae3712b5" title="Gets the screen&#39;s y resolution. " alt="" coords="373,487,451,513"/>
+</map>

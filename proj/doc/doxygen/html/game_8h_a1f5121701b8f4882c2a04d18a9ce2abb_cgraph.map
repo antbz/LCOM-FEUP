@@ -1,0 +1,8 @@
+<map id="show_score" name="show_score">
+<area shape="rect" id="node2" href="$videocard_8h.html#a9c8ccb39b7658277b8e8dc61b5872f71" title="Draws a number on the screen. " alt="" coords="145,5,245,32"/>
+<area shape="rect" id="node6" href="$videocard_8h.html#abc52bd17c62214c39a53ab1484fedb88" title="Gets the screen&#39;s x resolution. " alt="" coords="156,56,235,83"/>
+<area shape="rect" id="node7" href="$videocard_8h.html#a2761af8b4bd131a1673b5c546f43d4c9" title="Draws a xpm image on the screen. " alt="" coords="293,81,376,108"/>
+<area shape="rect" id="node3" href="$videocard_8c.html#a2761af8b4bd131a1673b5c546f43d4c9" title="Draws a xpm image on the screen. " alt="" coords="293,19,376,45"/>
+<area shape="rect" id="node4" href="$videocard_8c.html#a5e0b5e6936836b0e25a5a5a628dbf4d3" title="Sets a pixel to a specified color. " alt="" coords="424,56,499,83"/>
+<area shape="rect" id="node5" href="$videocard_8c.html#ab8ef76c609c4580f3aa64707fa7c33b7" title="Checks if the coordinates of the pixel are inside the screen. " alt="" coords="547,56,625,83"/>
+</map>

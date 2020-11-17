@@ -1,0 +1,85 @@
+\hypertarget{line_8h}{}\section{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/headers/line.h File Reference}
+\label{line_8h}\index{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/headers/line.\+h@{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/headers/line.\+h}}
+
+
+\hyperlink{structline__t}{line\+\_\+t} object definition and manipulation.  
+
+
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for line.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{line_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{line_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structline__t}{line\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Sprite-\/like struct for lines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structline__t}{line\+\_\+t} \hyperlink{line_8h_ab1fa6364c37a6458a86e755e23b91555}{make\+\_\+line} (uint16\+\_\+t x\+\_\+i, uint16\+\_\+t y\+\_\+i, uint16\+\_\+t x\+\_\+f, uint16\+\_\+t y\+\_\+f)
+\begin{DoxyCompactList}\small\item\em \hyperlink{structline__t}{line\+\_\+t} constructor. \end{DoxyCompactList}\item 
+void \hyperlink{line_8h_a41b18702398ce9f5ce937a1bdd741277}{destroy\+\_\+line} (\hyperlink{structline__t}{line\+\_\+t} $\ast$line)
+\begin{DoxyCompactList}\small\item\em \hyperlink{structline__t}{line\+\_\+t} destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structline__t}{line\+\_\+t} object definition and manipulation. 
+
+File containing the definition of and functions to manipulate \hyperlink{structline__t}{line\+\_\+t} struct objects. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{line_8h_a41b18702398ce9f5ce937a1bdd741277}\label{line_8h_a41b18702398ce9f5ce937a1bdd741277}} 
+\index{line.\+h@{line.\+h}!destroy\+\_\+line@{destroy\+\_\+line}}
+\index{destroy\+\_\+line@{destroy\+\_\+line}!line.\+h@{line.\+h}}
+\subsubsection{\texorpdfstring{destroy\+\_\+line()}{destroy\_line()}}
+{\footnotesize\ttfamily void destroy\+\_\+line (\begin{DoxyParamCaption}\item[{\hyperlink{structline__t}{line\+\_\+t} $\ast$}]{line }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structline__t}{line\+\_\+t} destructor. 
+
+Destroys a \hyperlink{structline__t}{line\+\_\+t} object, freeing up the space allocated to the points array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & a pointer to the \hyperlink{structline__t}{line\+\_\+t} to destroy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{line_8h_ab1fa6364c37a6458a86e755e23b91555}\label{line_8h_ab1fa6364c37a6458a86e755e23b91555}} 
+\index{line.\+h@{line.\+h}!make\+\_\+line@{make\+\_\+line}}
+\index{make\+\_\+line@{make\+\_\+line}!line.\+h@{line.\+h}}
+\subsubsection{\texorpdfstring{make\+\_\+line()}{make\_line()}}
+{\footnotesize\ttfamily \hyperlink{structline__t}{line\+\_\+t} make\+\_\+line (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x\+\_\+i,  }\item[{uint16\+\_\+t}]{y\+\_\+i,  }\item[{uint16\+\_\+t}]{x\+\_\+f,  }\item[{uint16\+\_\+t}]{y\+\_\+f }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structline__t}{line\+\_\+t} constructor. 
+
+Creates a new \hyperlink{structline__t}{line\+\_\+t} equivalent to a line between two specified points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+i} & the starting point x-\/coordinate. \\
+\hline
+{\em y\+\_\+i} & the starting point y-\/coordinate. \\
+\hline
+{\em x\+\_\+f} & the end point x-\/coordinate. \\
+\hline
+{\em y\+\_\+f} & the end point y-\/coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new \hyperlink{structline__t}{line\+\_\+t} object. 
+\end{DoxyReturn}

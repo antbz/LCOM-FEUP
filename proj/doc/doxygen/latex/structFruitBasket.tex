@@ -1,0 +1,60 @@
+\hypertarget{structFruitBasket}{}\section{Fruit\+Basket Struct Reference}
+\label{structFruitBasket}\index{Fruit\+Basket@{Fruit\+Basket}}
+
+
+Container for objects of Fruit$\ast$ type.  
+
+
+
+
+{\ttfamily \#include $<$fruit.\+h$>$}
+
+
+
+Collaboration diagram for Fruit\+Basket\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{structFruitBasket__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structFruit}{Fruit} $\ast$$\ast$ \hyperlink{structFruitBasket_ae5641a1a4ed91bdc01b4aaf5b263b2b1}{contents}
+\item 
+size\+\_\+t \hyperlink{structFruitBasket_abcf02dddf09fc857940ec2ec6a101400}{capacity}
+\item 
+int \hyperlink{structFruitBasket_a752bfa7c141af1434ddb78ce754e8db6}{next}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container for objects of Fruit$\ast$ type. 
+
+Stores Fruit$\ast$ members in an array of fixed size. Has information about the array size and stores the first empty postion in the array. Useful for supporting creating and removing fruits during program execution. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structFruitBasket_abcf02dddf09fc857940ec2ec6a101400}\label{structFruitBasket_abcf02dddf09fc857940ec2ec6a101400}} 
+\index{Fruit\+Basket@{Fruit\+Basket}!capacity@{capacity}}
+\index{capacity@{capacity}!Fruit\+Basket@{Fruit\+Basket}}
+\subsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily size\+\_\+t Fruit\+Basket\+::capacity}
+
+Capacity of the Fruit$\ast$ array. \mbox{\Hypertarget{structFruitBasket_ae5641a1a4ed91bdc01b4aaf5b263b2b1}\label{structFruitBasket_ae5641a1a4ed91bdc01b4aaf5b263b2b1}} 
+\index{Fruit\+Basket@{Fruit\+Basket}!contents@{contents}}
+\index{contents@{contents}!Fruit\+Basket@{Fruit\+Basket}}
+\subsubsection{\texorpdfstring{contents}{contents}}
+{\footnotesize\ttfamily \hyperlink{structFruit}{Fruit}$\ast$$\ast$ Fruit\+Basket\+::contents}
+
+Array of Fruit$\ast$ types. \mbox{\Hypertarget{structFruitBasket_a752bfa7c141af1434ddb78ce754e8db6}\label{structFruitBasket_a752bfa7c141af1434ddb78ce754e8db6}} 
+\index{Fruit\+Basket@{Fruit\+Basket}!next@{next}}
+\index{next@{next}!Fruit\+Basket@{Fruit\+Basket}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily int Fruit\+Basket\+::next}
+
+First empty postion in the array, where a new Fruit$\ast$ should be inserted if need be. If the array is full it is set to -\/1. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/headers/\hyperlink{fruit_8h}{fruit.\+h}\end{DoxyCompactItemize}

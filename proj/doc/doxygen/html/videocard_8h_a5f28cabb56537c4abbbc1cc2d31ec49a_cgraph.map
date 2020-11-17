@@ -1,0 +1,5 @@
+<map id="draw_rectangle" name="draw_rectangle">
+<area shape="rect" id="node2" href="$videocard_8c.html#ab0acf421bb2c87e3e3d0a6b56afc00ae" title="Draws a horizontal line on the screen. " alt="" coords="164,5,248,32"/>
+<area shape="rect" id="node3" href="$videocard_8c.html#a5e0b5e6936836b0e25a5a5a628dbf4d3" title="Sets a pixel to a specified color. " alt="" coords="296,5,371,32"/>
+<area shape="rect" id="node4" href="$videocard_8c.html#ab8ef76c609c4580f3aa64707fa7c33b7" title="Checks if the coordinates of the pixel are inside the screen. " alt="" coords="419,5,497,32"/>
+</map>

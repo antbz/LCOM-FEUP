@@ -1,0 +1,4 @@
+<map id="check_cut_fruit" name="check_cut_fruit">
+<area shape="rect" id="node2" href="$fruit_8c.html#a8464151d1f72af6dd4c8f4139676628f" title="Checks if a line_t intersects a Fruit. " alt="" coords="164,5,263,32"/>
+<area shape="rect" id="node3" href="$fruit_8c.html#aebe00723882a63b8e631a78bcab60d67" title="Cuts a Fruit. " alt="" coords="179,56,248,83"/>
+</map>

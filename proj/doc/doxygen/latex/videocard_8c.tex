@@ -1,0 +1,443 @@
+\hypertarget{videocard_8c}{}\section{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/videocard.c File Reference}
+\label{videocard_8c}\index{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/videocard.\+c@{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/videocard.\+c}}
+{\ttfamily \#include \char`\"{}../headers/videocard.\+h\char`\"{}}\newline
+Include dependency graph for videocard.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{videocard_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{videocard_8c_a3894d39378657dc7b344e8322aae4372}{vbe\+\_\+mode\+\_\+info} (uint16\+\_\+t mode, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\item 
+int \hyperlink{videocard_8c_afb4146df5590405404a911e802644f82}{set\+\_\+vbe\+\_\+mode} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Sets the V\+BE mode. \end{DoxyCompactList}\item 
+int \hyperlink{videocard_8c_a650ed5a8eee87860be3f62fda1144eda}{bits\+To\+Bytes} (uint8\+\_\+t bits)
+\begin{DoxyCompactList}\small\item\em Auxiliary function to get the number of bytes by the number of bits. \end{DoxyCompactList}\item 
+void \hyperlink{videocard_8c_ae2f0d8493cb002947433bd66e1433478}{map\+\_\+video\+\_\+mem} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Maps video memory for specified mode. \end{DoxyCompactList}\item 
+void \hyperlink{videocard_8c_a177220e5ecf81c6bbc29027576d39194}{refresh\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Refreshes the video card buffer. \end{DoxyCompactList}\item 
+int \hyperlink{videocard_8c_a5e0b5e6936836b0e25a5a5a628dbf4d3}{set\+\_\+pixel} (uint32\+\_\+t color, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Sets a pixel to a specified color. \end{DoxyCompactList}\item 
+int \hyperlink{videocard_8c_ab0acf421bb2c87e3e3d0a6b56afc00ae}{draw\+\_\+hline} (uint32\+\_\+t color, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Draws a horizontal line on the screen. \end{DoxyCompactList}\item 
+int \hyperlink{videocard_8c_a5f28cabb56537c4abbbc1cc2d31ec49a}{draw\+\_\+rectangle} (uint32\+\_\+t color, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle on the screen. \end{DoxyCompactList}\item 
+int \hyperlink{videocard_8c_a2ae7adc216c62dd6f2d12654afd944e6}{draw\+\_\+line} (uint32\+\_\+t color, \hyperlink{structline__t}{line\+\_\+t} $\ast$line)
+\begin{DoxyCompactList}\small\item\em Draws a line on the screen. \end{DoxyCompactList}\item 
+void \hyperlink{videocard_8c_a9c8ccb39b7658277b8e8dc61b5872f71}{draw\+\_\+number} (int num, uint16\+\_\+t x, uint16\+\_\+t y, bool right, xpm\+\_\+image\+\_\+t $\ast$\hyperlink{proj_8c_a4ae5a66dc8e2b9e3f32f1919c67d8ea1}{digits})
+\begin{DoxyCompactList}\small\item\em Draws a number on the screen. \end{DoxyCompactList}\item 
+int \hyperlink{videocard_8c_a2761af8b4bd131a1673b5c546f43d4c9}{draw\+\_\+xpm} (uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)
+\begin{DoxyCompactList}\small\item\em Draws a xpm image on the screen. \end{DoxyCompactList}\item 
+int \hyperlink{videocard_8c_af2fa003f9b60b8890f1ea089376bc13a}{clear\+\_\+xpm} (uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)
+\begin{DoxyCompactList}\small\item\em Clears a xpm image from the screen. \end{DoxyCompactList}\item 
+void \hyperlink{videocard_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\+\_\+screen} ()
+\begin{DoxyCompactList}\small\item\em Clears the screen. \end{DoxyCompactList}\item 
+void \hyperlink{videocard_8c_a344946a738b47b528fa6bb32ada17b8e}{clear\+\_\+screen\+\_\+background} (xpm\+\_\+image\+\_\+t background\+\_\+img)
+\begin{DoxyCompactList}\small\item\em Clears the screen with a background. \end{DoxyCompactList}\item 
+bool \hyperlink{videocard_8c_ab8ef76c609c4580f3aa64707fa7c33b7}{in\+\_\+screen} (uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Checks if the coordinates of the pixel are inside the screen. \end{DoxyCompactList}\item 
+unsigned \hyperlink{videocard_8c_a3ef4e6aa5eed9ea4aa5a2ba6ae3712b5}{get\+\_\+y\+\_\+res} ()
+\begin{DoxyCompactList}\small\item\em Gets the screen\textquotesingle{}s y resolution. \end{DoxyCompactList}\item 
+unsigned \hyperlink{videocard_8c_abc52bd17c62214c39a53ab1484fedb88}{get\+\_\+x\+\_\+res} ()
+\begin{DoxyCompactList}\small\item\em Gets the screen\textquotesingle{}s x resolution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{videocard_8c_ab1e417e8be2fb1a2feac372b1b15ce90}{timer\+\_\+counter}
+\item 
+int \hyperlink{videocard_8c_a4ffc7747c6b2edda863a38a736112878}{timer\+\_\+hookid}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{videocard_8c_a650ed5a8eee87860be3f62fda1144eda}\label{videocard_8c_a650ed5a8eee87860be3f62fda1144eda}} 
+\index{videocard.\+c@{videocard.\+c}!bits\+To\+Bytes@{bits\+To\+Bytes}}
+\index{bits\+To\+Bytes@{bits\+To\+Bytes}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{bits\+To\+Bytes()}{bitsToBytes()}}
+{\footnotesize\ttfamily int bits\+To\+Bytes (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{bits }\end{DoxyParamCaption})}
+
+
+
+Auxiliary function to get the number of bytes by the number of bits. 
+
+Divides the number of bits by eight and returns the ceiling of the result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & number of bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+corresponding number of bytes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{videocard_8c_a4953d1edcbbfc7e420c423ded1d5621a}\label{videocard_8c_a4953d1edcbbfc7e420c423ded1d5621a}} 
+\index{videocard.\+c@{videocard.\+c}!clear\+\_\+screen@{clear\+\_\+screen}}
+\index{clear\+\_\+screen@{clear\+\_\+screen}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{clear\+\_\+screen()}{clear\_screen()}}
+{\footnotesize\ttfamily void clear\+\_\+screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the screen. 
+
+Sets every pixel on the screen to black \mbox{\Hypertarget{videocard_8c_a344946a738b47b528fa6bb32ada17b8e}\label{videocard_8c_a344946a738b47b528fa6bb32ada17b8e}} 
+\index{videocard.\+c@{videocard.\+c}!clear\+\_\+screen\+\_\+background@{clear\+\_\+screen\+\_\+background}}
+\index{clear\+\_\+screen\+\_\+background@{clear\+\_\+screen\+\_\+background}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{clear\+\_\+screen\+\_\+background()}{clear\_screen\_background()}}
+{\footnotesize\ttfamily void clear\+\_\+screen\+\_\+background (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{background\+\_\+img }\end{DoxyParamCaption})}
+
+
+
+Clears the screen with a background. 
+
+Draws the background on the screen, clearing every other image that was previously showing on the screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em background\+\_\+img} & xpm\+\_\+image\+\_\+t with the xpm of the background \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{videocard_8c_a344946a738b47b528fa6bb32ada17b8e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videocard_8c_af2fa003f9b60b8890f1ea089376bc13a}\label{videocard_8c_af2fa003f9b60b8890f1ea089376bc13a}} 
+\index{videocard.\+c@{videocard.\+c}!clear\+\_\+xpm@{clear\+\_\+xpm}}
+\index{clear\+\_\+xpm@{clear\+\_\+xpm}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{clear\+\_\+xpm()}{clear\_xpm()}}
+{\footnotesize\ttfamily int clear\+\_\+xpm (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{xpm\+\_\+image\+\_\+t}]{img }\end{DoxyParamCaption})}
+
+
+
+Clears a xpm image from the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the pixel where the image starts \\
+\hline
+{\em y} & y coordinate of the pixel where the image starts \\
+\hline
+{\em img} & xpm\+\_\+image\+\_\+t with the xpm to be cleared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{videocard_8c_af2fa003f9b60b8890f1ea089376bc13a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videocard_8c_ab0acf421bb2c87e3e3d0a6b56afc00ae}\label{videocard_8c_ab0acf421bb2c87e3e3d0a6b56afc00ae}} 
+\index{videocard.\+c@{videocard.\+c}!draw\+\_\+hline@{draw\+\_\+hline}}
+\index{draw\+\_\+hline@{draw\+\_\+hline}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+hline()}{draw\_hline()}}
+{\footnotesize\ttfamily int draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+
+
+Draws a horizontal line on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & the color to draw the line in. \\
+\hline
+{\em x} & x coordinate of the pixel where to start drawing the line \\
+\hline
+{\em y} & y coordinate of the pixel where to start drawing the line \\
+\hline
+{\em len} & lenght of the line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{videocard_8c_ab0acf421bb2c87e3e3d0a6b56afc00ae_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videocard_8c_a2ae7adc216c62dd6f2d12654afd944e6}\label{videocard_8c_a2ae7adc216c62dd6f2d12654afd944e6}} 
+\index{videocard.\+c@{videocard.\+c}!draw\+\_\+line@{draw\+\_\+line}}
+\index{draw\+\_\+line@{draw\+\_\+line}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+line()}{draw\_line()}}
+{\footnotesize\ttfamily int draw\+\_\+line (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color,  }\item[{\hyperlink{structline__t}{line\+\_\+t} $\ast$}]{line }\end{DoxyParamCaption})}
+
+
+
+Draws a line on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & the color to draw the line in. \\
+\hline
+{\em line} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{videocard_8c_a2ae7adc216c62dd6f2d12654afd944e6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videocard_8c_a9c8ccb39b7658277b8e8dc61b5872f71}\label{videocard_8c_a9c8ccb39b7658277b8e8dc61b5872f71}} 
+\index{videocard.\+c@{videocard.\+c}!draw\+\_\+number@{draw\+\_\+number}}
+\index{draw\+\_\+number@{draw\+\_\+number}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+number()}{draw\_number()}}
+{\footnotesize\ttfamily void draw\+\_\+number (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{bool}]{right,  }\item[{xpm\+\_\+image\+\_\+t $\ast$}]{digits }\end{DoxyParamCaption})}
+
+
+
+Draws a number on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & integer of the number to be drawn \\
+\hline
+{\em x} & x coordinate of the pixel where to start drawing \\
+\hline
+{\em y} & y coordinate of the pixel where to start drawing \\
+\hline
+{\em right} & \\
+\hline
+{\em digits} & xpm\+\_\+image\+\_\+t$\ast$ with the xpms of the digits to be used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{videocard_8c_a9c8ccb39b7658277b8e8dc61b5872f71_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videocard_8c_a5f28cabb56537c4abbbc1cc2d31ec49a}\label{videocard_8c_a5f28cabb56537c4abbbc1cc2d31ec49a}} 
+\index{videocard.\+c@{videocard.\+c}!draw\+\_\+rectangle@{draw\+\_\+rectangle}}
+\index{draw\+\_\+rectangle@{draw\+\_\+rectangle}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+rectangle()}{draw\_rectangle()}}
+{\footnotesize\ttfamily int draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height }\end{DoxyParamCaption})}
+
+
+
+Draws a rectangle on the screen. 
+
+Draws a rectangle by drawing several lines
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & the color to draw the rectangle in. \\
+\hline
+{\em x} & x coordinate of the pixel where to start drawing the rectangle \\
+\hline
+{\em y} & y coordinate of the pixel where to start drawing the rectangle \\
+\hline
+{\em width} & width of the rectangle \\
+\hline
+{\em height} & height of the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{videocard_8c_a5f28cabb56537c4abbbc1cc2d31ec49a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videocard_8c_a2761af8b4bd131a1673b5c546f43d4c9}\label{videocard_8c_a2761af8b4bd131a1673b5c546f43d4c9}} 
+\index{videocard.\+c@{videocard.\+c}!draw\+\_\+xpm@{draw\+\_\+xpm}}
+\index{draw\+\_\+xpm@{draw\+\_\+xpm}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+xpm()}{draw\_xpm()}}
+{\footnotesize\ttfamily int draw\+\_\+xpm (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{xpm\+\_\+image\+\_\+t}]{img }\end{DoxyParamCaption})}
+
+
+
+Draws a xpm image on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the pixel where to start drawing \\
+\hline
+{\em y} & y coordinate of the pixel where to start drawing \\
+\hline
+{\em img} & xpm\+\_\+image\+\_\+t with the xpm to be drawn \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{videocard_8c_a2761af8b4bd131a1673b5c546f43d4c9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videocard_8c_abc52bd17c62214c39a53ab1484fedb88}\label{videocard_8c_abc52bd17c62214c39a53ab1484fedb88}} 
+\index{videocard.\+c@{videocard.\+c}!get\+\_\+x\+\_\+res@{get\+\_\+x\+\_\+res}}
+\index{get\+\_\+x\+\_\+res@{get\+\_\+x\+\_\+res}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+x\+\_\+res()}{get\_x\_res()}}
+{\footnotesize\ttfamily unsigned get\+\_\+x\+\_\+res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the screen\textquotesingle{}s x resolution. 
+
+\begin{DoxyReturn}{Returns}
+Value of the screen\textquotesingle{}s x resolution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{videocard_8c_a3ef4e6aa5eed9ea4aa5a2ba6ae3712b5}\label{videocard_8c_a3ef4e6aa5eed9ea4aa5a2ba6ae3712b5}} 
+\index{videocard.\+c@{videocard.\+c}!get\+\_\+y\+\_\+res@{get\+\_\+y\+\_\+res}}
+\index{get\+\_\+y\+\_\+res@{get\+\_\+y\+\_\+res}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+y\+\_\+res()}{get\_y\_res()}}
+{\footnotesize\ttfamily unsigned get\+\_\+y\+\_\+res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the screen\textquotesingle{}s y resolution. 
+
+\begin{DoxyReturn}{Returns}
+Value of the screen\textquotesingle{}s y resolution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{videocard_8c_ab8ef76c609c4580f3aa64707fa7c33b7}\label{videocard_8c_ab8ef76c609c4580f3aa64707fa7c33b7}} 
+\index{videocard.\+c@{videocard.\+c}!in\+\_\+screen@{in\+\_\+screen}}
+\index{in\+\_\+screen@{in\+\_\+screen}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{in\+\_\+screen()}{in\_screen()}}
+{\footnotesize\ttfamily bool in\+\_\+screen (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Checks if the coordinates of the pixel are inside the screen. 
+
+Checks if the x and y coordinates are larger than 0 and smaller than the screen\textquotesingle{}s resolution
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the pixel to check \\
+\hline
+{\em y} & y coordinate of the pixel to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the pixel is inside the screen, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{videocard_8c_ae2f0d8493cb002947433bd66e1433478}\label{videocard_8c_ae2f0d8493cb002947433bd66e1433478}} 
+\index{videocard.\+c@{videocard.\+c}!map\+\_\+video\+\_\+mem@{map\+\_\+video\+\_\+mem}}
+\index{map\+\_\+video\+\_\+mem@{map\+\_\+video\+\_\+mem}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{map\+\_\+video\+\_\+mem()}{map\_video\_mem()}}
+{\footnotesize\ttfamily void map\+\_\+video\+\_\+mem (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Maps video memory for specified mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & the mode to map video memory to. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{videocard_8c_ae2f0d8493cb002947433bd66e1433478_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videocard_8c_a177220e5ecf81c6bbc29027576d39194}\label{videocard_8c_a177220e5ecf81c6bbc29027576d39194}} 
+\index{videocard.\+c@{videocard.\+c}!refresh\+\_\+buffer@{refresh\+\_\+buffer}}
+\index{refresh\+\_\+buffer@{refresh\+\_\+buffer}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{refresh\+\_\+buffer()}{refresh\_buffer()}}
+{\footnotesize\ttfamily void refresh\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Refreshes the video card buffer. 
+
+\mbox{\Hypertarget{videocard_8c_a5e0b5e6936836b0e25a5a5a628dbf4d3}\label{videocard_8c_a5e0b5e6936836b0e25a5a5a628dbf4d3}} 
+\index{videocard.\+c@{videocard.\+c}!set\+\_\+pixel@{set\+\_\+pixel}}
+\index{set\+\_\+pixel@{set\+\_\+pixel}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{set\+\_\+pixel()}{set\_pixel()}}
+{\footnotesize\ttfamily int set\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Sets a pixel to a specified color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & the color to change the pixel to. \\
+\hline
+{\em x} & x coordinate of the pixel \\
+\hline
+{\em y} & y coordinate of the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{videocard_8c_a5e0b5e6936836b0e25a5a5a628dbf4d3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videocard_8c_afb4146df5590405404a911e802644f82}\label{videocard_8c_afb4146df5590405404a911e802644f82}} 
+\index{videocard.\+c@{videocard.\+c}!set\+\_\+vbe\+\_\+mode@{set\+\_\+vbe\+\_\+mode}}
+\index{set\+\_\+vbe\+\_\+mode@{set\+\_\+vbe\+\_\+mode}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{set\+\_\+vbe\+\_\+mode()}{set\_vbe\_mode()}}
+{\footnotesize\ttfamily int set\+\_\+vbe\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Sets the V\+BE mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & the mode to set V\+BE to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{videocard_8c_a3894d39378657dc7b344e8322aae4372}\label{videocard_8c_a3894d39378657dc7b344e8322aae4372}} 
+\index{videocard.\+c@{videocard.\+c}!vbe\+\_\+mode\+\_\+info@{vbe\+\_\+mode\+\_\+info}}
+\index{vbe\+\_\+mode\+\_\+info@{vbe\+\_\+mode\+\_\+info}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{vbe\+\_\+mode\+\_\+info()}{vbe\_mode\_info()}}
+{\footnotesize\ttfamily int vbe\+\_\+mode\+\_\+info (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode,  }\item[{vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$}]{mode\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{videocard_8c_ab1e417e8be2fb1a2feac372b1b15ce90}\label{videocard_8c_ab1e417e8be2fb1a2feac372b1b15ce90}} 
+\index{videocard.\+c@{videocard.\+c}!timer\+\_\+counter@{timer\+\_\+counter}}
+\index{timer\+\_\+counter@{timer\+\_\+counter}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{timer\+\_\+counter}{timer\_counter}}
+{\footnotesize\ttfamily uint32\+\_\+t timer\+\_\+counter}
+
+\mbox{\Hypertarget{videocard_8c_a4ffc7747c6b2edda863a38a736112878}\label{videocard_8c_a4ffc7747c6b2edda863a38a736112878}} 
+\index{videocard.\+c@{videocard.\+c}!timer\+\_\+hookid@{timer\+\_\+hookid}}
+\index{timer\+\_\+hookid@{timer\+\_\+hookid}!videocard.\+c@{videocard.\+c}}
+\subsubsection{\texorpdfstring{timer\+\_\+hookid}{timer\_hookid}}
+{\footnotesize\ttfamily int timer\+\_\+hookid}
+

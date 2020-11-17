@@ -1,0 +1,295 @@
+\hypertarget{proj_8c}{}\section{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/proj.c File Reference}
+\label{proj_8c}\index{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/proj.\+c@{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/proj.\+c}}
+
+
+Main proj file.  
+
+
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/liblm.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/proj.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/pixmap.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}headers/images.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}headers/videocard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}headers/keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}headers/mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}headers/fruit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}headers/gestures.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}headers/rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}headers/serialport.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}headers/screen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}headers/game.\+h\char`\"{}}\newline
+Include dependency graph for proj.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proj_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{proj_8c_a5589bb78172f9538c78cbf98d2070d64}{M\+A\+X\+\_\+\+F\+R\+U\+I\+TS}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int() \hyperlink{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b}{proj\+\_\+main\+\_\+loop} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{proj_8c_a1cc545950661d96524585c500b3b68d1}{data} \mbox{[}2\mbox{]}
+\item 
+bool \hyperlink{proj_8c_aa02e483eb21e700531ca2ddf2508d189}{kbd\+\_\+valid}
+\item 
+bool \hyperlink{proj_8c_a78ab698245ea1f18f4b66d2cefbfa1f1}{two\+\_\+byte\+\_\+code}
+\item 
+uint32\+\_\+t \hyperlink{proj_8c_ab1e417e8be2fb1a2feac372b1b15ce90}{timer\+\_\+counter}
+\item 
+struct packet \hyperlink{proj_8c_a26e83eca70c2b9169fbbb0eac7e32e32}{pp}
+\item 
+unsigned \hyperlink{proj_8c_a50507d167542968dafdd0837cca1f2d6}{mouse\+\_\+counter}
+\item 
+enum \hyperlink{gestures_8h_a6ab3d6c199d4a2d7945eff8cbec931cf}{mouse\+\_\+state\+\_\+t} \hyperlink{proj_8c_a6fd7f9aee5ea8b280cd794534218f943}{cutting\+\_\+state}
+\item 
+int \hyperlink{proj_8c_ab58df36fd429cab6ab2f2dedd531f7a9}{rand\+\_\+seed}
+\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{proj_8c_acdb942ad2d6bc3f9f4ea9718544e3f20}{current\+\_\+screen}
+\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{proj_8c_a63e82f6c3b89f0915083279e595405c8}{main\+\_\+screen}
+\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{proj_8c_aa46b3543441e4bc26755fa348b7bfb09}{singleplayer\+\_\+screen}
+\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{proj_8c_a32862b9a9d773edf79209c3309adfde9}{endsp\+\_\+game\+\_\+screen}
+\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{proj_8c_a138d63d02d52fa1b7ce698e4ada226cc}{help\+\_\+screen}
+\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{proj_8c_a73560b3ac8d7e302f4163adb35fabea9}{multiplayer\+\_\+screen}
+\item 
+\hyperlink{structFruit}{Fruit} $\ast$ \hyperlink{proj_8c_ab5a2fa8bb9de35bb1854492bfa9ee515}{mouse\+\_\+pointer}
+\item 
+uint32\+\_\+t \hyperlink{proj_8c_abe902382ebcf927bbba5c0d47bf53138}{score}
+\item 
+uint32\+\_\+t \hyperlink{proj_8c_a54168638e53aa4b71960f544f51b02b4}{combo}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{proj_8c_a4ae5a66dc8e2b9e3f32f1919c67d8ea1}{digits} \mbox{[}10\mbox{]}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{proj_8c_a34bcf325103efe12271f8e301024e7a9}{game\+\_\+images} \mbox{[}\hyperlink{images_8h_a9cb64526659b4bebea0d36565debb187}{N\+U\+M\+\_\+\+I\+M\+A\+G\+ES}\mbox{]}
+\item 
+double \hyperlink{proj_8c_a87cce0b4ec875d24d943339d87ae1bff}{cut\+\_\+slope}
+\item 
+uint16\+\_\+t \hyperlink{proj_8c_ae6f465474f222a913c25973aef9dcf92}{cut\+\_\+xi}
+\item 
+uint16\+\_\+t \hyperlink{proj_8c_ae2fa0b2063a5b059cc56d61a2b098334}{cut\+\_\+xf}
+\item 
+uint16\+\_\+t \hyperlink{proj_8c_a80107960ee329353b9a566db9afc1d0d}{cut\+\_\+yi}
+\item 
+uint16\+\_\+t \hyperlink{proj_8c_ac662efd1d29ae70befceea0ac7fdb6cf}{cut\+\_\+yf}
+\item 
+bool \hyperlink{proj_8c_a36cf75a4e09c56df8a5661b30a38544d}{spectator}
+\item 
+bool \hyperlink{proj_8c_af990f034322a33df09a5cd717569d052}{ser\+\_\+read}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main proj file. 
+
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{proj_8c_a5589bb78172f9538c78cbf98d2070d64}\label{proj_8c_a5589bb78172f9538c78cbf98d2070d64}} 
+\index{proj.\+c@{proj.\+c}!M\+A\+X\+\_\+\+F\+R\+U\+I\+TS@{M\+A\+X\+\_\+\+F\+R\+U\+I\+TS}}
+\index{M\+A\+X\+\_\+\+F\+R\+U\+I\+TS@{M\+A\+X\+\_\+\+F\+R\+U\+I\+TS}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+F\+R\+U\+I\+TS}{MAX\_FRUITS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+F\+R\+U\+I\+TS~10}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{proj.\+c@{proj.\+c}!main@{main}}
+\index{main@{main}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b}\label{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b}} 
+\index{proj.\+c@{proj.\+c}!proj\+\_\+main\+\_\+loop@{proj\+\_\+main\+\_\+loop}}
+\index{proj\+\_\+main\+\_\+loop@{proj\+\_\+main\+\_\+loop}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{proj\+\_\+main\+\_\+loop()}{proj\_main\_loop()}}
+{\footnotesize\ttfamily int() proj\+\_\+main\+\_\+loop (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+M\+A\+IN Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{proj_8c_a54168638e53aa4b71960f544f51b02b4}\label{proj_8c_a54168638e53aa4b71960f544f51b02b4}} 
+\index{proj.\+c@{proj.\+c}!combo@{combo}}
+\index{combo@{combo}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{combo}{combo}}
+{\footnotesize\ttfamily uint32\+\_\+t combo}
+
+\mbox{\Hypertarget{proj_8c_acdb942ad2d6bc3f9f4ea9718544e3f20}\label{proj_8c_acdb942ad2d6bc3f9f4ea9718544e3f20}} 
+\index{proj.\+c@{proj.\+c}!current\+\_\+screen@{current\+\_\+screen}}
+\index{current\+\_\+screen@{current\+\_\+screen}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{current\+\_\+screen}{current\_screen}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen}$\ast$ current\+\_\+screen}
+
+\mbox{\Hypertarget{proj_8c_a87cce0b4ec875d24d943339d87ae1bff}\label{proj_8c_a87cce0b4ec875d24d943339d87ae1bff}} 
+\index{proj.\+c@{proj.\+c}!cut\+\_\+slope@{cut\+\_\+slope}}
+\index{cut\+\_\+slope@{cut\+\_\+slope}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{cut\+\_\+slope}{cut\_slope}}
+{\footnotesize\ttfamily double cut\+\_\+slope}
+
+\mbox{\Hypertarget{proj_8c_ae2fa0b2063a5b059cc56d61a2b098334}\label{proj_8c_ae2fa0b2063a5b059cc56d61a2b098334}} 
+\index{proj.\+c@{proj.\+c}!cut\+\_\+xf@{cut\+\_\+xf}}
+\index{cut\+\_\+xf@{cut\+\_\+xf}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{cut\+\_\+xf}{cut\_xf}}
+{\footnotesize\ttfamily uint16\+\_\+t cut\+\_\+xf}
+
+\mbox{\Hypertarget{proj_8c_ae6f465474f222a913c25973aef9dcf92}\label{proj_8c_ae6f465474f222a913c25973aef9dcf92}} 
+\index{proj.\+c@{proj.\+c}!cut\+\_\+xi@{cut\+\_\+xi}}
+\index{cut\+\_\+xi@{cut\+\_\+xi}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{cut\+\_\+xi}{cut\_xi}}
+{\footnotesize\ttfamily uint16\+\_\+t cut\+\_\+xi}
+
+\mbox{\Hypertarget{proj_8c_ac662efd1d29ae70befceea0ac7fdb6cf}\label{proj_8c_ac662efd1d29ae70befceea0ac7fdb6cf}} 
+\index{proj.\+c@{proj.\+c}!cut\+\_\+yf@{cut\+\_\+yf}}
+\index{cut\+\_\+yf@{cut\+\_\+yf}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{cut\+\_\+yf}{cut\_yf}}
+{\footnotesize\ttfamily uint16\+\_\+t cut\+\_\+yf}
+
+\mbox{\Hypertarget{proj_8c_a80107960ee329353b9a566db9afc1d0d}\label{proj_8c_a80107960ee329353b9a566db9afc1d0d}} 
+\index{proj.\+c@{proj.\+c}!cut\+\_\+yi@{cut\+\_\+yi}}
+\index{cut\+\_\+yi@{cut\+\_\+yi}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{cut\+\_\+yi}{cut\_yi}}
+{\footnotesize\ttfamily uint16\+\_\+t cut\+\_\+yi}
+
+\mbox{\Hypertarget{proj_8c_a6fd7f9aee5ea8b280cd794534218f943}\label{proj_8c_a6fd7f9aee5ea8b280cd794534218f943}} 
+\index{proj.\+c@{proj.\+c}!cutting\+\_\+state@{cutting\+\_\+state}}
+\index{cutting\+\_\+state@{cutting\+\_\+state}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{cutting\+\_\+state}{cutting\_state}}
+{\footnotesize\ttfamily enum \hyperlink{gestures_8h_a6ab3d6c199d4a2d7945eff8cbec931cf}{mouse\+\_\+state\+\_\+t} cutting\+\_\+state}
+
+\mbox{\Hypertarget{proj_8c_a1cc545950661d96524585c500b3b68d1}\label{proj_8c_a1cc545950661d96524585c500b3b68d1}} 
+\index{proj.\+c@{proj.\+c}!data@{data}}
+\index{data@{data}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t data\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{proj_8c_a4ae5a66dc8e2b9e3f32f1919c67d8ea1}\label{proj_8c_a4ae5a66dc8e2b9e3f32f1919c67d8ea1}} 
+\index{proj.\+c@{proj.\+c}!digits@{digits}}
+\index{digits@{digits}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{digits}{digits}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t digits\mbox{[}10\mbox{]}}
+
+Digit images array. \mbox{\Hypertarget{proj_8c_a32862b9a9d773edf79209c3309adfde9}\label{proj_8c_a32862b9a9d773edf79209c3309adfde9}} 
+\index{proj.\+c@{proj.\+c}!endsp\+\_\+game\+\_\+screen@{endsp\+\_\+game\+\_\+screen}}
+\index{endsp\+\_\+game\+\_\+screen@{endsp\+\_\+game\+\_\+screen}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{endsp\+\_\+game\+\_\+screen}{endsp\_game\_screen}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen} $\ast$ endsp\+\_\+game\+\_\+screen}
+
+\mbox{\Hypertarget{proj_8c_a34bcf325103efe12271f8e301024e7a9}\label{proj_8c_a34bcf325103efe12271f8e301024e7a9}} 
+\index{proj.\+c@{proj.\+c}!game\+\_\+images@{game\+\_\+images}}
+\index{game\+\_\+images@{game\+\_\+images}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{game\+\_\+images}{game\_images}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t game\+\_\+images\mbox{[}\hyperlink{images_8h_a9cb64526659b4bebea0d36565debb187}{N\+U\+M\+\_\+\+I\+M\+A\+G\+ES}\mbox{]}}
+
+Game images array. \mbox{\Hypertarget{proj_8c_a138d63d02d52fa1b7ce698e4ada226cc}\label{proj_8c_a138d63d02d52fa1b7ce698e4ada226cc}} 
+\index{proj.\+c@{proj.\+c}!help\+\_\+screen@{help\+\_\+screen}}
+\index{help\+\_\+screen@{help\+\_\+screen}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{help\+\_\+screen}{help\_screen}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen} $\ast$ help\+\_\+screen}
+
+\mbox{\Hypertarget{proj_8c_aa02e483eb21e700531ca2ddf2508d189}\label{proj_8c_aa02e483eb21e700531ca2ddf2508d189}} 
+\index{proj.\+c@{proj.\+c}!kbd\+\_\+valid@{kbd\+\_\+valid}}
+\index{kbd\+\_\+valid@{kbd\+\_\+valid}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{kbd\+\_\+valid}{kbd\_valid}}
+{\footnotesize\ttfamily bool kbd\+\_\+valid}
+
+\mbox{\Hypertarget{proj_8c_a63e82f6c3b89f0915083279e595405c8}\label{proj_8c_a63e82f6c3b89f0915083279e595405c8}} 
+\index{proj.\+c@{proj.\+c}!main\+\_\+screen@{main\+\_\+screen}}
+\index{main\+\_\+screen@{main\+\_\+screen}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{main\+\_\+screen}{main\_screen}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen} $\ast$ main\+\_\+screen}
+
+\mbox{\Hypertarget{proj_8c_a50507d167542968dafdd0837cca1f2d6}\label{proj_8c_a50507d167542968dafdd0837cca1f2d6}} 
+\index{proj.\+c@{proj.\+c}!mouse\+\_\+counter@{mouse\+\_\+counter}}
+\index{mouse\+\_\+counter@{mouse\+\_\+counter}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{mouse\+\_\+counter}{mouse\_counter}}
+{\footnotesize\ttfamily unsigned mouse\+\_\+counter}
+
+\mbox{\Hypertarget{proj_8c_ab5a2fa8bb9de35bb1854492bfa9ee515}\label{proj_8c_ab5a2fa8bb9de35bb1854492bfa9ee515}} 
+\index{proj.\+c@{proj.\+c}!mouse\+\_\+pointer@{mouse\+\_\+pointer}}
+\index{mouse\+\_\+pointer@{mouse\+\_\+pointer}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{mouse\+\_\+pointer}{mouse\_pointer}}
+{\footnotesize\ttfamily \hyperlink{structFruit}{Fruit}$\ast$ mouse\+\_\+pointer}
+
+\mbox{\Hypertarget{proj_8c_a73560b3ac8d7e302f4163adb35fabea9}\label{proj_8c_a73560b3ac8d7e302f4163adb35fabea9}} 
+\index{proj.\+c@{proj.\+c}!multiplayer\+\_\+screen@{multiplayer\+\_\+screen}}
+\index{multiplayer\+\_\+screen@{multiplayer\+\_\+screen}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{multiplayer\+\_\+screen}{multiplayer\_screen}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen} $\ast$ multiplayer\+\_\+screen}
+
+\mbox{\Hypertarget{proj_8c_a26e83eca70c2b9169fbbb0eac7e32e32}\label{proj_8c_a26e83eca70c2b9169fbbb0eac7e32e32}} 
+\index{proj.\+c@{proj.\+c}!pp@{pp}}
+\index{pp@{pp}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{pp}{pp}}
+{\footnotesize\ttfamily struct packet pp}
+
+\mbox{\Hypertarget{proj_8c_ab58df36fd429cab6ab2f2dedd531f7a9}\label{proj_8c_ab58df36fd429cab6ab2f2dedd531f7a9}} 
+\index{proj.\+c@{proj.\+c}!rand\+\_\+seed@{rand\+\_\+seed}}
+\index{rand\+\_\+seed@{rand\+\_\+seed}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{rand\+\_\+seed}{rand\_seed}}
+{\footnotesize\ttfamily int rand\+\_\+seed}
+
+\mbox{\Hypertarget{proj_8c_abe902382ebcf927bbba5c0d47bf53138}\label{proj_8c_abe902382ebcf927bbba5c0d47bf53138}} 
+\index{proj.\+c@{proj.\+c}!score@{score}}
+\index{score@{score}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily uint32\+\_\+t score}
+
+\mbox{\Hypertarget{proj_8c_af990f034322a33df09a5cd717569d052}\label{proj_8c_af990f034322a33df09a5cd717569d052}} 
+\index{proj.\+c@{proj.\+c}!ser\+\_\+read@{ser\+\_\+read}}
+\index{ser\+\_\+read@{ser\+\_\+read}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{ser\+\_\+read}{ser\_read}}
+{\footnotesize\ttfamily bool ser\+\_\+read}
+
+\mbox{\Hypertarget{proj_8c_aa46b3543441e4bc26755fa348b7bfb09}\label{proj_8c_aa46b3543441e4bc26755fa348b7bfb09}} 
+\index{proj.\+c@{proj.\+c}!singleplayer\+\_\+screen@{singleplayer\+\_\+screen}}
+\index{singleplayer\+\_\+screen@{singleplayer\+\_\+screen}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{singleplayer\+\_\+screen}{singleplayer\_screen}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen} $\ast$ singleplayer\+\_\+screen}
+
+\mbox{\Hypertarget{proj_8c_a36cf75a4e09c56df8a5661b30a38544d}\label{proj_8c_a36cf75a4e09c56df8a5661b30a38544d}} 
+\index{proj.\+c@{proj.\+c}!spectator@{spectator}}
+\index{spectator@{spectator}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{spectator}{spectator}}
+{\footnotesize\ttfamily bool spectator}
+
+\mbox{\Hypertarget{proj_8c_ab1e417e8be2fb1a2feac372b1b15ce90}\label{proj_8c_ab1e417e8be2fb1a2feac372b1b15ce90}} 
+\index{proj.\+c@{proj.\+c}!timer\+\_\+counter@{timer\+\_\+counter}}
+\index{timer\+\_\+counter@{timer\+\_\+counter}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{timer\+\_\+counter}{timer\_counter}}
+{\footnotesize\ttfamily uint32\+\_\+t timer\+\_\+counter}
+
+\mbox{\Hypertarget{proj_8c_a78ab698245ea1f18f4b66d2cefbfa1f1}\label{proj_8c_a78ab698245ea1f18f4b66d2cefbfa1f1}} 
+\index{proj.\+c@{proj.\+c}!two\+\_\+byte\+\_\+code@{two\+\_\+byte\+\_\+code}}
+\index{two\+\_\+byte\+\_\+code@{two\+\_\+byte\+\_\+code}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{two\+\_\+byte\+\_\+code}{two\_byte\_code}}
+{\footnotesize\ttfamily bool two\+\_\+byte\+\_\+code}
+

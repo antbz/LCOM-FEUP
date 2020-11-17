@@ -1,0 +1,595 @@
+\hypertarget{fruit_8c}{}\section{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/fruit.c File Reference}
+\label{fruit_8c}\index{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/fruit.\+c@{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/fruit.\+c}}
+{\ttfamily \#include \char`\"{}../headers/fruit.\+h\char`\"{}}\newline
+Include dependency graph for fruit.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fruit_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structFruitBasket}{Fruit\+Basket} \hyperlink{fruit_8c_a101df9ac2f3cbb42e381fc7700e45716}{create\+Fruit\+Basket} (size\+\_\+t capacity)
+\begin{DoxyCompactList}\small\item\em \hyperlink{structFruitBasket}{Fruit\+Basket} constructor. \end{DoxyCompactList}\item 
+void \hyperlink{fruit_8c_afd70dea1365750e5bda54a38c651879c}{destroy\+Fruit\+Basket} (\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$fruit\+\_\+basket)
+\begin{DoxyCompactList}\small\item\em \hyperlink{structFruitBasket}{Fruit\+Basket} destructor. \end{DoxyCompactList}\item 
+void \hyperlink{fruit_8c_a7a4dead7cbd3f3f8945528a9061f49fd}{empty\+Fruit\+Basket} (\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$fruit\+\_\+basket)
+\begin{DoxyCompactList}\small\item\em Clears a \hyperlink{structFruitBasket}{Fruit\+Basket}. \end{DoxyCompactList}\item 
+int \hyperlink{fruit_8c_ac7a91b2e2080e787f8d80cf70b94ac72}{find\+\_\+next} (\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$fruit\+\_\+basket)
+\begin{DoxyCompactList}\small\item\em Finds next empty postion in a \hyperlink{structFruitBasket}{Fruit\+Basket}. \end{DoxyCompactList}\item 
+bool \hyperlink{fruit_8c_ac4cf4b96c22296dc7869b6801073bdf8}{add\+\_\+fruit} (\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$fruit\+\_\+basket, \hyperlink{structFruit}{Fruit} $\ast$new\+\_\+fruit)
+\begin{DoxyCompactList}\small\item\em Inserts a new \hyperlink{structFruit}{Fruit} in the \hyperlink{structFruitBasket}{Fruit\+Basket} specified. \end{DoxyCompactList}\item 
+bool \hyperlink{fruit_8c_a09372da6f5d287df6536e79b952b3dfd}{remove\+\_\+fruit} (\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$fruit\+\_\+basket, \hyperlink{structFruit}{Fruit} $\ast$rotten\+\_\+fruit, size\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em Removes a \hyperlink{structFruit}{Fruit} from the \hyperlink{structFruitBasket}{Fruit\+Basket} specified. \end{DoxyCompactList}\item 
+\hyperlink{structFruit}{Fruit} $\ast$ \hyperlink{fruit_8c_aa70662fbdfb806ceaedc7f3a449adf84}{create\+Fruit} (xpm\+\_\+image\+\_\+t img\+\_\+whole, xpm\+\_\+image\+\_\+t img\+\_\+chopped, double x\+\_\+init, double y\+\_\+init, double x\+\_\+speed, double y\+\_\+speed, bool is\+\_\+moving, bool is\+\_\+chopped)
+\begin{DoxyCompactList}\small\item\em \hyperlink{structFruit}{Fruit} constructor. \end{DoxyCompactList}\item 
+\hyperlink{structFruit}{Fruit} $\ast$ \hyperlink{fruit_8c_afec2bc0ac89269264bc9aed5c4d69f91}{create\+Bomb} (xpm\+\_\+image\+\_\+t img\+\_\+whole, xpm\+\_\+image\+\_\+t img\+\_\+chopped, double x\+\_\+init, double y\+\_\+init, double x\+\_\+speed, double y\+\_\+speed, bool is\+\_\+moving, bool is\+\_\+chopped)
+\begin{DoxyCompactList}\small\item\em \hyperlink{structFruit}{Fruit} constructor for bombs. \end{DoxyCompactList}\item 
+void \hyperlink{fruit_8c_a1bb643fa94cfda951845904206eac674}{destroy\+Fruit} (\hyperlink{structFruit}{Fruit} $\ast$fruit)
+\begin{DoxyCompactList}\small\item\em \hyperlink{structFruit}{Fruit} destructor. \end{DoxyCompactList}\item 
+void \hyperlink{fruit_8c_ae065cf14eba5c8735cd7c1421abbbc10}{draw\+\_\+fruit} (\hyperlink{structFruit}{Fruit} $\ast$fruit)
+\begin{DoxyCompactList}\small\item\em Displays a \hyperlink{structFruit}{Fruit}. \end{DoxyCompactList}\item 
+void \hyperlink{fruit_8c_a7c331c1195fbc5a1fc4b39b96c539b6d}{move\+\_\+fruit} (\hyperlink{structFruit}{Fruit} $\ast$fruit)
+\begin{DoxyCompactList}\small\item\em Updates the positon of a \hyperlink{structFruit}{Fruit} and displays it. \end{DoxyCompactList}\item 
+bool \hyperlink{fruit_8c_a1d3d5449c3ace47ff50d0594f9082970}{fruit\+\_\+out\+\_\+of\+\_\+screen} (\hyperlink{structFruit}{Fruit} $\ast$fruit)
+\begin{DoxyCompactList}\small\item\em Verifies if a \hyperlink{structFruit}{Fruit} is out of bounds. \end{DoxyCompactList}\item 
+\hyperlink{structFruit}{Fruit} $\ast$ \hyperlink{fruit_8c_a913c9d31bcc12f55ff2468f93a42ac89}{launch\+\_\+fruit} (xpm\+\_\+image\+\_\+t whole, xpm\+\_\+image\+\_\+t chopped, bool bomb)
+\begin{DoxyCompactList}\small\item\em Launches a \hyperlink{structFruit}{Fruit} from the bottom of the screen. \end{DoxyCompactList}\item 
+bool \hyperlink{fruit_8c_a8464151d1f72af6dd4c8f4139676628f}{intersect\+\_\+line} (\hyperlink{structFruit}{Fruit} $\ast$fruit, \hyperlink{structline__t}{line\+\_\+t} $\ast$line)
+\begin{DoxyCompactList}\small\item\em Checks if a \hyperlink{structline__t}{line\+\_\+t} intersects a \hyperlink{structFruit}{Fruit}. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{fruit_8c_ab844298c6f0f476a963fef97d6e36eb3}{check\+\_\+cut\+\_\+fruit} (\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$fruit\+\_\+basket, \hyperlink{structline__t}{line\+\_\+t} $\ast$line)
+\begin{DoxyCompactList}\small\item\em Cuts all Fruits contained in a \hyperlink{structFruitBasket}{Fruit\+Basket} that a \hyperlink{structline__t}{line\+\_\+t} intersects. \end{DoxyCompactList}\item 
+void \hyperlink{fruit_8c_aebe00723882a63b8e631a78bcab60d67}{cut\+\_\+fruit} (\hyperlink{structFruit}{Fruit} $\ast$fruit)
+\begin{DoxyCompactList}\small\item\em Cuts a \hyperlink{structFruit}{Fruit}. \end{DoxyCompactList}\item 
+void \hyperlink{fruit_8c_a975e757ce467abc5ac6bd2c36393c1c7}{move\+\_\+mouse} (\hyperlink{structFruit}{Fruit} $\ast$\hyperlink{proj_8c_ab5a2fa8bb9de35bb1854492bfa9ee515}{mouse\+\_\+pointer}, int delta\+\_\+x, int delta\+\_\+y, bool lb)
+\begin{DoxyCompactList}\small\item\em Updates mouse-\/pointer position. \end{DoxyCompactList}\item 
+bool \hyperlink{fruit_8c_a318efc9530035feb477dc4c9d80a618c}{collide\+\_\+fruit} (\hyperlink{structFruit}{Fruit} $\ast$f1, \hyperlink{structFruit}{Fruit} $\ast$f2)
+\item 
+void \hyperlink{fruit_8c_ab9a082b75991bdd190f5e8c536693afe}{check\+\_\+colliding\+\_\+fruit} (\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$fruit\+\_\+basket)
+\begin{DoxyCompactList}\small\item\em Sprite collision detection between Fruits. \end{DoxyCompactList}\item 
+void \hyperlink{fruit_8c_a1c02e04f16bdda8ab5eca4cba226bb63}{shoot\+\_\+fruit} (\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$fruit\+\_\+basket, size\+\_\+t num)
+\begin{DoxyCompactList}\small\item\em Shots a specified number of random Fruits. \end{DoxyCompactList}\item 
+void \hyperlink{fruit_8c_aa92d193370a23e36b0e61cdeccedaf22}{fire\+\_\+fruit} (\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$fruit\+\_\+basket, \hyperlink{structFruit}{Fruit} $\ast$cannon)
+\begin{DoxyCompactList}\small\item\em Fire fruit from cannon poition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{fruit_8c_ab58df36fd429cab6ab2f2dedd531f7a9}{rand\+\_\+seed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{fruit_8c_ac4cf4b96c22296dc7869b6801073bdf8}\label{fruit_8c_ac4cf4b96c22296dc7869b6801073bdf8}} 
+\index{fruit.\+c@{fruit.\+c}!add\+\_\+fruit@{add\+\_\+fruit}}
+\index{add\+\_\+fruit@{add\+\_\+fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{add\+\_\+fruit()}{add\_fruit()}}
+{\footnotesize\ttfamily bool add\+\_\+fruit (\begin{DoxyParamCaption}\item[{\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$}]{fruit\+\_\+basket,  }\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{new\+\_\+fruit }\end{DoxyParamCaption})}
+
+
+
+Inserts a new \hyperlink{structFruit}{Fruit} in the \hyperlink{structFruitBasket}{Fruit\+Basket} specified. 
+
+Inserts a given Fruit$\ast$ in the next postion of a specified \hyperlink{structFruitBasket}{Fruit\+Basket}, if its contents array is not full.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit\+\_\+basket} & a pointer to the \hyperlink{structFruitBasket}{Fruit\+Basket} where the Fruit$\ast$ should be inserted. \\
+\hline
+{\em new\+\_\+fruit} & the Fruit$\ast$ to be inserted in the \hyperlink{structFruitBasket}{Fruit\+Basket}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the fruit was added successfuly to the \hyperlink{structFruitBasket}{Fruit\+Basket}, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{fruit_8c_ac4cf4b96c22296dc7869b6801073bdf8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fruit_8c_ab9a082b75991bdd190f5e8c536693afe}\label{fruit_8c_ab9a082b75991bdd190f5e8c536693afe}} 
+\index{fruit.\+c@{fruit.\+c}!check\+\_\+colliding\+\_\+fruit@{check\+\_\+colliding\+\_\+fruit}}
+\index{check\+\_\+colliding\+\_\+fruit@{check\+\_\+colliding\+\_\+fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{check\+\_\+colliding\+\_\+fruit()}{check\_colliding\_fruit()}}
+{\footnotesize\ttfamily void check\+\_\+colliding\+\_\+fruit (\begin{DoxyParamCaption}\item[{\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$}]{fruit\+\_\+basket }\end{DoxyParamCaption})}
+
+
+
+Sprite collision detection between Fruits. 
+
+Detects colliding Fruits in a \hyperlink{structFruitBasket}{Fruit\+Basket} and changes their movement accordingly. Only colisions between whole Fruits that are falling are considered. Two Fruits that have previously collided with other Fruits are not considered so as to avoid weird jittering.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit\+\_\+basket} & a pointer to the \hyperlink{structFruitBasket}{Fruit\+Basket} to analyse. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{fruit_8c_ab9a082b75991bdd190f5e8c536693afe_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fruit_8c_ab844298c6f0f476a963fef97d6e36eb3}\label{fruit_8c_ab844298c6f0f476a963fef97d6e36eb3}} 
+\index{fruit.\+c@{fruit.\+c}!check\+\_\+cut\+\_\+fruit@{check\+\_\+cut\+\_\+fruit}}
+\index{check\+\_\+cut\+\_\+fruit@{check\+\_\+cut\+\_\+fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{check\+\_\+cut\+\_\+fruit()}{check\_cut\_fruit()}}
+{\footnotesize\ttfamily size\+\_\+t check\+\_\+cut\+\_\+fruit (\begin{DoxyParamCaption}\item[{\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$}]{fruit\+\_\+basket,  }\item[{\hyperlink{structline__t}{line\+\_\+t} $\ast$}]{line }\end{DoxyParamCaption})}
+
+
+
+Cuts all Fruits contained in a \hyperlink{structFruitBasket}{Fruit\+Basket} that a \hyperlink{structline__t}{line\+\_\+t} intersects. 
+
+Checks for intersections between a specified \hyperlink{structline__t}{line\+\_\+t} object and the \hyperlink{structFruit}{Fruit} objects inside the contents array of a specified \hyperlink{structFruitBasket}{Fruit\+Basket}. In case an intersection is found, the corresponding \hyperlink{structFruit}{Fruit} object is cut. Returns the number of cut fruits.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit\+\_\+basket} & a pointer to the \hyperlink{structFruitBasket}{Fruit\+Basket} to check against the \hyperlink{structline__t}{line\+\_\+t}. \\
+\hline
+{\em line} & a pointer to the \hyperlink{structline__t}{line\+\_\+t} to check against the \hyperlink{structFruitBasket}{Fruit\+Basket}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of \hyperlink{structFruit}{Fruit} objects the \hyperlink{structline__t}{line\+\_\+t} intersected. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{fruit_8c_ab844298c6f0f476a963fef97d6e36eb3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fruit_8c_a318efc9530035feb477dc4c9d80a618c}\label{fruit_8c_a318efc9530035feb477dc4c9d80a618c}} 
+\index{fruit.\+c@{fruit.\+c}!collide\+\_\+fruit@{collide\+\_\+fruit}}
+\index{collide\+\_\+fruit@{collide\+\_\+fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{collide\+\_\+fruit()}{collide\_fruit()}}
+{\footnotesize\ttfamily bool collide\+\_\+fruit (\begin{DoxyParamCaption}\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{f1,  }\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{fruit_8c_afec2bc0ac89269264bc9aed5c4d69f91}\label{fruit_8c_afec2bc0ac89269264bc9aed5c4d69f91}} 
+\index{fruit.\+c@{fruit.\+c}!create\+Bomb@{create\+Bomb}}
+\index{create\+Bomb@{create\+Bomb}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{create\+Bomb()}{createBomb()}}
+{\footnotesize\ttfamily \hyperlink{structFruit}{Fruit}$\ast$ create\+Bomb (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{xpm\+\_\+whole,  }\item[{xpm\+\_\+image\+\_\+t}]{xpm\+\_\+chopped,  }\item[{double}]{x\+\_\+init,  }\item[{double}]{y\+\_\+init,  }\item[{double}]{x\+\_\+speed,  }\item[{double}]{y\+\_\+speed,  }\item[{bool}]{is\+\_\+moving,  }\item[{bool}]{is\+\_\+chopped }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structFruit}{Fruit} constructor for bombs. 
+
+Constructs a new \hyperlink{structFruit}{Fruit} object with the specified images and properties that is a bomb object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm\+\_\+whole} & the image for the \char`\"{}whole\char`\"{} state of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em xpm\+\_\+chopped} & the image for the \char`\"{}cut\char`\"{} state of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em x\+\_\+init} & the initial horizontal position of the top-\/left corner of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em y\+\_\+init} & the initial vertical position of the top-\/left corner of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em x\+\_\+speed} & the initial horizontal speed of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em y\+\_\+speed} & the initial vertical speed of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em is\+\_\+moving} & the moving state of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em is\+\_\+chopped} & the \char`\"{}whole/cut\char`\"{} state of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created Fruit/bomb. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fruit_8c_aa70662fbdfb806ceaedc7f3a449adf84}\label{fruit_8c_aa70662fbdfb806ceaedc7f3a449adf84}} 
+\index{fruit.\+c@{fruit.\+c}!create\+Fruit@{create\+Fruit}}
+\index{create\+Fruit@{create\+Fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{create\+Fruit()}{createFruit()}}
+{\footnotesize\ttfamily \hyperlink{structFruit}{Fruit}$\ast$ create\+Fruit (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{xpm\+\_\+whole,  }\item[{xpm\+\_\+image\+\_\+t}]{xpm\+\_\+chopped,  }\item[{double}]{x\+\_\+init,  }\item[{double}]{y\+\_\+init,  }\item[{double}]{x\+\_\+speed,  }\item[{double}]{y\+\_\+speed,  }\item[{bool}]{is\+\_\+moving,  }\item[{bool}]{is\+\_\+chopped }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structFruit}{Fruit} constructor. 
+
+Constructs a new \hyperlink{structFruit}{Fruit} object with the specified images and properties.
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm\+\_\+whole} & the image for the \char`\"{}whole\char`\"{} state of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em xpm\+\_\+chopped} & the image for the \char`\"{}cut\char`\"{} state of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em x\+\_\+init} & the initial horizontal position of the top-\/left corner of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em y\+\_\+init} & the initial vertical position of the top-\/left corner of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em x\+\_\+speed} & the initial horizontal speed of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em y\+\_\+speed} & the initial vertical speed of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em is\+\_\+moving} & the moving state of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em is\+\_\+chopped} & the \char`\"{}whole/cut\char`\"{} state of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created \hyperlink{structFruit}{Fruit}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fruit_8c_a101df9ac2f3cbb42e381fc7700e45716}\label{fruit_8c_a101df9ac2f3cbb42e381fc7700e45716}} 
+\index{fruit.\+c@{fruit.\+c}!create\+Fruit\+Basket@{create\+Fruit\+Basket}}
+\index{create\+Fruit\+Basket@{create\+Fruit\+Basket}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{create\+Fruit\+Basket()}{createFruitBasket()}}
+{\footnotesize\ttfamily \hyperlink{structFruitBasket}{Fruit\+Basket} create\+Fruit\+Basket (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{capacity }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structFruitBasket}{Fruit\+Basket} constructor. 
+
+Constructs a new \hyperlink{structFruitBasket}{Fruit\+Basket} with specified capacity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & of the new \hyperlink{structFruitBasket}{Fruit\+Basket} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new \hyperlink{structFruitBasket}{Fruit\+Basket} struct. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fruit_8c_aebe00723882a63b8e631a78bcab60d67}\label{fruit_8c_aebe00723882a63b8e631a78bcab60d67}} 
+\index{fruit.\+c@{fruit.\+c}!cut\+\_\+fruit@{cut\+\_\+fruit}}
+\index{cut\+\_\+fruit@{cut\+\_\+fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{cut\+\_\+fruit()}{cut\_fruit()}}
+{\footnotesize\ttfamily void cut\+\_\+fruit (\begin{DoxyParamCaption}\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{fruit }\end{DoxyParamCaption})}
+
+
+
+Cuts a \hyperlink{structFruit}{Fruit}. 
+
+Changes the value of is\+\_\+chopped to false and in case the \hyperlink{structFruit}{Fruit} is moving upwards, makes it so it starts accelerating downwards.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit} & a pointer to the \hyperlink{structFruit}{Fruit} to cut. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fruit_8c_a1bb643fa94cfda951845904206eac674}\label{fruit_8c_a1bb643fa94cfda951845904206eac674}} 
+\index{fruit.\+c@{fruit.\+c}!destroy\+Fruit@{destroy\+Fruit}}
+\index{destroy\+Fruit@{destroy\+Fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{destroy\+Fruit()}{destroyFruit()}}
+{\footnotesize\ttfamily void destroy\+Fruit (\begin{DoxyParamCaption}\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{fruit }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structFruit}{Fruit} destructor. 
+
+Destroys a \hyperlink{structFruit}{Fruit} object, freeing the space previously allocated to it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit} & a pointer to the \hyperlink{structFruit}{Fruit} to destroy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fruit_8c_afd70dea1365750e5bda54a38c651879c}\label{fruit_8c_afd70dea1365750e5bda54a38c651879c}} 
+\index{fruit.\+c@{fruit.\+c}!destroy\+Fruit\+Basket@{destroy\+Fruit\+Basket}}
+\index{destroy\+Fruit\+Basket@{destroy\+Fruit\+Basket}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{destroy\+Fruit\+Basket()}{destroyFruitBasket()}}
+{\footnotesize\ttfamily void destroy\+Fruit\+Basket (\begin{DoxyParamCaption}\item[{\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$}]{fruit\+\_\+basket }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structFruitBasket}{Fruit\+Basket} destructor. 
+
+Destroys a \hyperlink{structFruitBasket}{Fruit\+Basket} object, destroying the Fruit$\ast$ it contained and the contents array that contained them.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit\+\_\+basket} & a pointer to the \hyperlink{structFruitBasket}{Fruit\+Basket} to be deleted. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{fruit_8c_afd70dea1365750e5bda54a38c651879c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fruit_8c_ae065cf14eba5c8735cd7c1421abbbc10}\label{fruit_8c_ae065cf14eba5c8735cd7c1421abbbc10}} 
+\index{fruit.\+c@{fruit.\+c}!draw\+\_\+fruit@{draw\+\_\+fruit}}
+\index{draw\+\_\+fruit@{draw\+\_\+fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+fruit()}{draw\_fruit()}}
+{\footnotesize\ttfamily void draw\+\_\+fruit (\begin{DoxyParamCaption}\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{fruit }\end{DoxyParamCaption})}
+
+
+
+Displays a \hyperlink{structFruit}{Fruit}. 
+
+Draws a \hyperlink{structFruit}{Fruit} object on screen, choosing the image to be displayed according to the value of is\+\_\+chopped.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit} & a pointer to the \hyperlink{structFruit}{Fruit} to display. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fruit_8c_ae065cf14eba5c8735cd7c1421abbbc10_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fruit_8c_a7a4dead7cbd3f3f8945528a9061f49fd}\label{fruit_8c_a7a4dead7cbd3f3f8945528a9061f49fd}} 
+\index{fruit.\+c@{fruit.\+c}!empty\+Fruit\+Basket@{empty\+Fruit\+Basket}}
+\index{empty\+Fruit\+Basket@{empty\+Fruit\+Basket}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{empty\+Fruit\+Basket()}{emptyFruitBasket()}}
+{\footnotesize\ttfamily void empty\+Fruit\+Basket (\begin{DoxyParamCaption}\item[{\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$}]{fruit\+\_\+basket }\end{DoxyParamCaption})}
+
+
+
+Clears a \hyperlink{structFruitBasket}{Fruit\+Basket}. 
+
+Destroys the Fruit$\ast$ contained in the \hyperlink{structFruitBasket}{Fruit\+Basket} object specified. Sets all aray postions to N\+U\+LL and next as the first positon of the array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit\+\_\+basket} & a pointer to the \hyperlink{structFruitBasket}{Fruit\+Basket} to be cleared. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{fruit_8c_a7a4dead7cbd3f3f8945528a9061f49fd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fruit_8c_ac7a91b2e2080e787f8d80cf70b94ac72}\label{fruit_8c_ac7a91b2e2080e787f8d80cf70b94ac72}} 
+\index{fruit.\+c@{fruit.\+c}!find\+\_\+next@{find\+\_\+next}}
+\index{find\+\_\+next@{find\+\_\+next}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{find\+\_\+next()}{find\_next()}}
+{\footnotesize\ttfamily int find\+\_\+next (\begin{DoxyParamCaption}\item[{\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$}]{fruit\+\_\+basket }\end{DoxyParamCaption})}
+
+
+
+Finds next empty postion in a \hyperlink{structFruitBasket}{Fruit\+Basket}. 
+
+Finds the next empty postion in the contents array of a specified \hyperlink{structFruitBasket}{Fruit\+Basket} If all positions are full returns -\/1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit\+\_\+basket} & a pointer to the \hyperlink{structFruitBasket}{Fruit\+Basket} where to find the next position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The postion of the first empty space in the array. If all are full, returns -\/1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fruit_8c_aa92d193370a23e36b0e61cdeccedaf22}\label{fruit_8c_aa92d193370a23e36b0e61cdeccedaf22}} 
+\index{fruit.\+c@{fruit.\+c}!fire\+\_\+fruit@{fire\+\_\+fruit}}
+\index{fire\+\_\+fruit@{fire\+\_\+fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{fire\+\_\+fruit()}{fire\_fruit()}}
+{\footnotesize\ttfamily void fire\+\_\+fruit (\begin{DoxyParamCaption}\item[{\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$}]{fruit\+\_\+basket,  }\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{cannon }\end{DoxyParamCaption})}
+
+
+
+Fire fruit from cannon poition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit\+\_\+basket} & the \hyperlink{structFruitBasket}{Fruit\+Basket} where the \hyperlink{structFruit}{Fruit} will be added. \\
+\hline
+{\em cannon} & the \hyperlink{structFruit}{Fruit} cannon. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{fruit_8c_aa92d193370a23e36b0e61cdeccedaf22_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fruit_8c_a1d3d5449c3ace47ff50d0594f9082970}\label{fruit_8c_a1d3d5449c3ace47ff50d0594f9082970}} 
+\index{fruit.\+c@{fruit.\+c}!fruit\+\_\+out\+\_\+of\+\_\+screen@{fruit\+\_\+out\+\_\+of\+\_\+screen}}
+\index{fruit\+\_\+out\+\_\+of\+\_\+screen@{fruit\+\_\+out\+\_\+of\+\_\+screen}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{fruit\+\_\+out\+\_\+of\+\_\+screen()}{fruit\_out\_of\_screen()}}
+{\footnotesize\ttfamily bool fruit\+\_\+out\+\_\+of\+\_\+screen (\begin{DoxyParamCaption}\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{fruit }\end{DoxyParamCaption})}
+
+
+
+Verifies if a \hyperlink{structFruit}{Fruit} is out of bounds. 
+
+Checks the position of a \hyperlink{structFruit}{Fruit} object against the screen resolution to determine when it has moved outside of the visible area. Takes into account the direction of the \hyperlink{structFruit}{Fruit}\textquotesingle{}s movement to decide what position makes it completely invisible.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit} & a pointer to the \hyperlink{structFruit}{Fruit} to verify. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the fruit is not visible, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{fruit_8c_a1d3d5449c3ace47ff50d0594f9082970_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fruit_8c_a8464151d1f72af6dd4c8f4139676628f}\label{fruit_8c_a8464151d1f72af6dd4c8f4139676628f}} 
+\index{fruit.\+c@{fruit.\+c}!intersect\+\_\+line@{intersect\+\_\+line}}
+\index{intersect\+\_\+line@{intersect\+\_\+line}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{intersect\+\_\+line()}{intersect\_line()}}
+{\footnotesize\ttfamily bool intersect\+\_\+line (\begin{DoxyParamCaption}\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{fruit,  }\item[{\hyperlink{structline__t}{line\+\_\+t} $\ast$}]{line }\end{DoxyParamCaption})}
+
+
+
+Checks if a \hyperlink{structline__t}{line\+\_\+t} intersects a \hyperlink{structFruit}{Fruit}. 
+
+Checks if a \hyperlink{structline__t}{line\+\_\+t} object intersects a \hyperlink{structFruit}{Fruit} object. Used to see if a user mouse gesture results in a \hyperlink{structFruit}{Fruit} being cut. Takes into account if the line is intersecting a non-\/transparent pixel of the image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit} & a pointer to the \hyperlink{structFruit}{Fruit} to check against the \hyperlink{structline__t}{line\+\_\+t}. \\
+\hline
+{\em line} & a pointer to the \hyperlink{structline__t}{line\+\_\+t} to check agains the \hyperlink{structFruit}{Fruit}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the \hyperlink{structFruit}{Fruit} and \hyperlink{structline__t}{line\+\_\+t} intersect, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fruit_8c_a913c9d31bcc12f55ff2468f93a42ac89}\label{fruit_8c_a913c9d31bcc12f55ff2468f93a42ac89}} 
+\index{fruit.\+c@{fruit.\+c}!launch\+\_\+fruit@{launch\+\_\+fruit}}
+\index{launch\+\_\+fruit@{launch\+\_\+fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{launch\+\_\+fruit()}{launch\_fruit()}}
+{\footnotesize\ttfamily \hyperlink{structFruit}{Fruit}$\ast$ launch\+\_\+fruit (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{whole,  }\item[{xpm\+\_\+image\+\_\+t}]{chopped,  }\item[{bool}]{bomb }\end{DoxyParamCaption})}
+
+
+
+Launches a \hyperlink{structFruit}{Fruit} from the bottom of the screen. 
+
+Creates a new \hyperlink{structFruit}{Fruit} object that starts moving upwards from a random position on the bottom of the screen, with the specified images.
+
+
+\begin{DoxyParams}{Parameters}
+{\em whole} & the image for the \char`\"{}whole\char`\"{} state of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em whole} & the image for the \char`\"{}cut\char`\"{} state of the \hyperlink{structFruit}{Fruit}. \\
+\hline
+{\em bomb} & whether the new \hyperlink{structFruit}{Fruit} should be a bomb or not. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created \hyperlink{structFruit}{Fruit}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{fruit_8c_a913c9d31bcc12f55ff2468f93a42ac89_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fruit_8c_a7c331c1195fbc5a1fc4b39b96c539b6d}\label{fruit_8c_a7c331c1195fbc5a1fc4b39b96c539b6d}} 
+\index{fruit.\+c@{fruit.\+c}!move\+\_\+fruit@{move\+\_\+fruit}}
+\index{move\+\_\+fruit@{move\+\_\+fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{move\+\_\+fruit()}{move\_fruit()}}
+{\footnotesize\ttfamily void move\+\_\+fruit (\begin{DoxyParamCaption}\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{fruit }\end{DoxyParamCaption})}
+
+
+
+Updates the positon of a \hyperlink{structFruit}{Fruit} and displays it. 
+
+Changes the position of a \hyperlink{structFruit}{Fruit} object, if is\+\_\+moving is set to true, according to it\textquotesingle{}s speed and the defined gravity. Then it calls draw\+\_\+fruit to draw the \hyperlink{structFruit}{Fruit} in it\textquotesingle{}s position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit} & a pointer to the \hyperlink{structFruit}{Fruit} to update and display. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fruit_8c_a7c331c1195fbc5a1fc4b39b96c539b6d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fruit_8c_a975e757ce467abc5ac6bd2c36393c1c7}\label{fruit_8c_a975e757ce467abc5ac6bd2c36393c1c7}} 
+\index{fruit.\+c@{fruit.\+c}!move\+\_\+mouse@{move\+\_\+mouse}}
+\index{move\+\_\+mouse@{move\+\_\+mouse}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{move\+\_\+mouse()}{move\_mouse()}}
+{\footnotesize\ttfamily void move\+\_\+mouse (\begin{DoxyParamCaption}\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{mouse\+\_\+pointer,  }\item[{int}]{delta\+\_\+x,  }\item[{int}]{delta\+\_\+y,  }\item[{bool}]{lb }\end{DoxyParamCaption})}
+
+
+
+Updates mouse-\/pointer position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+pointer} & a pointer to the \hyperlink{structFruit}{Fruit} corresponding to the mouse-\/pointer. \\
+\hline
+{\em delta\+\_\+x} & the horizontal displacement. \\
+\hline
+{\em delta\+\_\+y} & the vertical displacement. \\
+\hline
+{\em lb} & the pressed/released state of the mouse. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{fruit_8c_a975e757ce467abc5ac6bd2c36393c1c7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fruit_8c_a09372da6f5d287df6536e79b952b3dfd}\label{fruit_8c_a09372da6f5d287df6536e79b952b3dfd}} 
+\index{fruit.\+c@{fruit.\+c}!remove\+\_\+fruit@{remove\+\_\+fruit}}
+\index{remove\+\_\+fruit@{remove\+\_\+fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{remove\+\_\+fruit()}{remove\_fruit()}}
+{\footnotesize\ttfamily bool remove\+\_\+fruit (\begin{DoxyParamCaption}\item[{\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$}]{fruit\+\_\+basket,  }\item[{\hyperlink{structFruit}{Fruit} $\ast$}]{rotten\+\_\+fruit,  }\item[{size\+\_\+t}]{pos }\end{DoxyParamCaption})}
+
+
+
+Removes a \hyperlink{structFruit}{Fruit} from the \hyperlink{structFruitBasket}{Fruit\+Basket} specified. 
+
+Removes a given Fruit$\ast$ currently in the \hyperlink{structFruitBasket}{Fruit\+Basket} from its contents array at a given position, if the Fruit$\ast$ matches the one in the array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit\+\_\+basket} & a pointer to the \hyperlink{structFruitBasket}{Fruit\+Basket} from which to remove the Fruit$\ast$. \\
+\hline
+{\em rotten\+\_\+fruit} & the Fruit$\ast$ to remove from the Fruit\+Basker. \\
+\hline
+{\em pos} & the position of the Fruit$\ast$ to remove from the array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the Fruit$\ast$ is successfully removed from the \hyperlink{structFruitBasket}{Fruit\+Basket}, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{fruit_8c_a09372da6f5d287df6536e79b952b3dfd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{fruit_8c_a1c02e04f16bdda8ab5eca4cba226bb63}\label{fruit_8c_a1c02e04f16bdda8ab5eca4cba226bb63}} 
+\index{fruit.\+c@{fruit.\+c}!shoot\+\_\+fruit@{shoot\+\_\+fruit}}
+\index{shoot\+\_\+fruit@{shoot\+\_\+fruit}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{shoot\+\_\+fruit()}{shoot\_fruit()}}
+{\footnotesize\ttfamily void shoot\+\_\+fruit (\begin{DoxyParamCaption}\item[{\hyperlink{structFruitBasket}{Fruit\+Basket} $\ast$}]{fruit\+\_\+basket,  }\item[{size\+\_\+t}]{num }\end{DoxyParamCaption})}
+
+
+
+Shots a specified number of random Fruits. 
+
+Creates a specified number of random Fruits and adds them to a \hyperlink{structFruitBasket}{Fruit\+Basket}. The Fruits will start moving upward with random horizontal speed from a random position in the bottom of the screen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fruit\+\_\+basket} & a pointer to the \hyperlink{structFruitBasket}{Fruit\+Basket} that will store the Fruits. \\
+\hline
+{\em num} & the number of Fruits to shoot. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fruit_8c_a1c02e04f16bdda8ab5eca4cba226bb63_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{fruit_8c_ab58df36fd429cab6ab2f2dedd531f7a9}\label{fruit_8c_ab58df36fd429cab6ab2f2dedd531f7a9}} 
+\index{fruit.\+c@{fruit.\+c}!rand\+\_\+seed@{rand\+\_\+seed}}
+\index{rand\+\_\+seed@{rand\+\_\+seed}!fruit.\+c@{fruit.\+c}}
+\subsubsection{\texorpdfstring{rand\+\_\+seed}{rand\_seed}}
+{\footnotesize\ttfamily int rand\+\_\+seed}
+

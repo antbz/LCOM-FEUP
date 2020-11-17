@@ -1,0 +1,131 @@
+\hypertarget{serialport_8c}{}\section{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/serialport.c File Reference}
+\label{serialport_8c}\index{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/serialport.\+c@{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/serialport.\+c}}
+{\ttfamily \#include \char`\"{}../headers/serialport.\+h\char`\"{}}\newline
+Include dependency graph for serialport.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{serialport_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \hyperlink{serialport_8c_a9acdc832669b0d350f825e66d152531c}{subscribe\+\_\+serialport} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Serial Port interrupt subscription. \end{DoxyCompactList}\item 
+int() \hyperlink{serialport_8c_aea490e3f6d6aadfd53621f367a1448e0}{unsubscribe\+\_\+serialport} ()
+\begin{DoxyCompactList}\small\item\em Serial port interrupt unsubscription. \end{DoxyCompactList}\item 
+int \hyperlink{serialport_8c_a6942cce80358a0c3274122304686a906}{read\+\_\+ser\+\_\+lsr} (uint8\+\_\+t $\ast$status)
+\item 
+void \hyperlink{serialport_8c_a9353fabdd05ea291e02243dace57ae1c}{ser\+\_\+ih} ()
+\begin{DoxyCompactList}\small\item\em Serial port interrupt handler. \end{DoxyCompactList}\item 
+int \hyperlink{serialport_8c_ac931570e6dd48ab5f285867c8903916a}{serial\+\_\+transmit\+\_\+force} (uint8\+\_\+t \hyperlink{proj_8c_a1cc545950661d96524585c500b3b68d1}{data})
+\begin{DoxyCompactList}\small\item\em Transmits byte to serial port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{serialport_8c_a71fddb2f0291f869eb24825f99b60255}{ser\+\_\+hookid} = 5
+\item 
+uint8\+\_\+t \hyperlink{serialport_8c_ac03e0f2e7789ee0139858ea29010e960}{ser\+\_\+in}
+\item 
+bool \hyperlink{serialport_8c_af990f034322a33df09a5cd717569d052}{ser\+\_\+read} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{serialport_8c_a6942cce80358a0c3274122304686a906}\label{serialport_8c_a6942cce80358a0c3274122304686a906}} 
+\index{serialport.\+c@{serialport.\+c}!read\+\_\+ser\+\_\+lsr@{read\+\_\+ser\+\_\+lsr}}
+\index{read\+\_\+ser\+\_\+lsr@{read\+\_\+ser\+\_\+lsr}!serialport.\+c@{serialport.\+c}}
+\subsubsection{\texorpdfstring{read\+\_\+ser\+\_\+lsr()}{read\_ser\_lsr()}}
+{\footnotesize\ttfamily int read\+\_\+ser\+\_\+lsr (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{status }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{serialport_8c_a6942cce80358a0c3274122304686a906_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{serialport_8c_a9353fabdd05ea291e02243dace57ae1c}\label{serialport_8c_a9353fabdd05ea291e02243dace57ae1c}} 
+\index{serialport.\+c@{serialport.\+c}!ser\+\_\+ih@{ser\+\_\+ih}}
+\index{ser\+\_\+ih@{ser\+\_\+ih}!serialport.\+c@{serialport.\+c}}
+\subsubsection{\texorpdfstring{ser\+\_\+ih()}{ser\_ih()}}
+{\footnotesize\ttfamily void ser\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Serial port interrupt handler. 
+
+Reads information from the Recieve Buffer if it is full and if so sets ser\+\_\+read to true. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{serialport_8c_a9353fabdd05ea291e02243dace57ae1c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{serialport_8c_ac931570e6dd48ab5f285867c8903916a}\label{serialport_8c_ac931570e6dd48ab5f285867c8903916a}} 
+\index{serialport.\+c@{serialport.\+c}!serial\+\_\+transmit\+\_\+force@{serial\+\_\+transmit\+\_\+force}}
+\index{serial\+\_\+transmit\+\_\+force@{serial\+\_\+transmit\+\_\+force}!serialport.\+c@{serialport.\+c}}
+\subsubsection{\texorpdfstring{serial\+\_\+transmit\+\_\+force()}{serial\_transmit\_force()}}
+{\footnotesize\ttfamily int serial\+\_\+transmit\+\_\+force (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Transmits byte to serial port. 
+
+Writes a byte data to the serial port Transmitter Holding Register, even if it is full.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & byte to be written to T\+HR. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{serialport_8c_a9acdc832669b0d350f825e66d152531c}\label{serialport_8c_a9acdc832669b0d350f825e66d152531c}} 
+\index{serialport.\+c@{serialport.\+c}!subscribe\+\_\+serialport@{subscribe\+\_\+serialport}}
+\index{subscribe\+\_\+serialport@{subscribe\+\_\+serialport}!serialport.\+c@{serialport.\+c}}
+\subsubsection{\texorpdfstring{subscribe\+\_\+serialport()}{subscribe\_serialport()}}
+{\footnotesize\ttfamily int() subscribe\+\_\+serialport (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Serial Port interrupt subscription. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bitno} & a pointer to a variable to store the I\+RQ bit number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{serialport_8c_aea490e3f6d6aadfd53621f367a1448e0}\label{serialport_8c_aea490e3f6d6aadfd53621f367a1448e0}} 
+\index{serialport.\+c@{serialport.\+c}!unsubscribe\+\_\+serialport@{unsubscribe\+\_\+serialport}}
+\index{unsubscribe\+\_\+serialport@{unsubscribe\+\_\+serialport}!serialport.\+c@{serialport.\+c}}
+\subsubsection{\texorpdfstring{unsubscribe\+\_\+serialport()}{unsubscribe\_serialport()}}
+{\footnotesize\ttfamily int() unsubscribe\+\_\+serialport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Serial port interrupt unsubscription. 
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{serialport_8c_a71fddb2f0291f869eb24825f99b60255}\label{serialport_8c_a71fddb2f0291f869eb24825f99b60255}} 
+\index{serialport.\+c@{serialport.\+c}!ser\+\_\+hookid@{ser\+\_\+hookid}}
+\index{ser\+\_\+hookid@{ser\+\_\+hookid}!serialport.\+c@{serialport.\+c}}
+\subsubsection{\texorpdfstring{ser\+\_\+hookid}{ser\_hookid}}
+{\footnotesize\ttfamily int ser\+\_\+hookid = 5}
+
+\mbox{\Hypertarget{serialport_8c_ac03e0f2e7789ee0139858ea29010e960}\label{serialport_8c_ac03e0f2e7789ee0139858ea29010e960}} 
+\index{serialport.\+c@{serialport.\+c}!ser\+\_\+in@{ser\+\_\+in}}
+\index{ser\+\_\+in@{ser\+\_\+in}!serialport.\+c@{serialport.\+c}}
+\subsubsection{\texorpdfstring{ser\+\_\+in}{ser\_in}}
+{\footnotesize\ttfamily uint8\+\_\+t ser\+\_\+in}
+
+\mbox{\Hypertarget{serialport_8c_af990f034322a33df09a5cd717569d052}\label{serialport_8c_af990f034322a33df09a5cd717569d052}} 
+\index{serialport.\+c@{serialport.\+c}!ser\+\_\+read@{ser\+\_\+read}}
+\index{ser\+\_\+read@{ser\+\_\+read}!serialport.\+c@{serialport.\+c}}
+\subsubsection{\texorpdfstring{ser\+\_\+read}{ser\_read}}
+{\footnotesize\ttfamily bool ser\+\_\+read = false}
+

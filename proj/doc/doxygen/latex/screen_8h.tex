@@ -1,0 +1,84 @@
+\hypertarget{screen_8h}{}\section{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/headers/screen.h File Reference}
+\label{screen_8h}\index{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/headers/screen.\+h@{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/headers/screen.\+h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}videocard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}fruit.\+h\char`\"{}}\newline
+Include dependency graph for screen.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{screen_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{screen_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structScreen}{Screen}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structScreen}{Screen} struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{screen_8h_a5d33bf5b50f987837d4e11d97bca29f2}{create\+Screen} (void($\ast$menu\+\_\+handler)(int n), xpm\+\_\+image\+\_\+t background, \hyperlink{structFruitBasket}{Fruit\+Basket} fruit\+\_\+basket)
+\begin{DoxyCompactList}\small\item\em \hyperlink{structScreen}{Screen} constructor. \end{DoxyCompactList}\item 
+void \hyperlink{screen_8h_a5297c4c7c2e0bae983cad4339a543efc}{destroy\+Screen} (\hyperlink{structScreen}{Screen} $\ast$screen)
+\begin{DoxyCompactList}\small\item\em \hyperlink{structScreen}{Screen} destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{screen_8h_a5d33bf5b50f987837d4e11d97bca29f2}\label{screen_8h_a5d33bf5b50f987837d4e11d97bca29f2}} 
+\index{screen.\+h@{screen.\+h}!create\+Screen@{create\+Screen}}
+\index{create\+Screen@{create\+Screen}!screen.\+h@{screen.\+h}}
+\subsubsection{\texorpdfstring{create\+Screen()}{createScreen()}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen}$\ast$ create\+Screen (\begin{DoxyParamCaption}\item[{void($\ast$)(int n)}]{menu\+\_\+handler,  }\item[{xpm\+\_\+image\+\_\+t}]{background,  }\item[{\hyperlink{structFruitBasket}{Fruit\+Basket}}]{fruit\+\_\+basket }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structScreen}{Screen} constructor. 
+
+Constructs a new \hyperlink{structScreen}{Screen} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu\+\_\+handler(int} & n) the screen\textquotesingle{}s interrupt handler. \\
+\hline
+{\em background} & the screen\textquotesingle{}s background image. \\
+\hline
+{\em fruit\+\_\+basket} & the screen\textquotesingle{}s \hyperlink{structFruitBasket}{Fruit\+Basket}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created \hyperlink{structScreen}{Screen}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{screen_8h_a5297c4c7c2e0bae983cad4339a543efc}\label{screen_8h_a5297c4c7c2e0bae983cad4339a543efc}} 
+\index{screen.\+h@{screen.\+h}!destroy\+Screen@{destroy\+Screen}}
+\index{destroy\+Screen@{destroy\+Screen}!screen.\+h@{screen.\+h}}
+\subsubsection{\texorpdfstring{destroy\+Screen()}{destroyScreen()}}
+{\footnotesize\ttfamily void destroy\+Screen (\begin{DoxyParamCaption}\item[{\hyperlink{structScreen}{Screen} $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structScreen}{Screen} destructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & a pointer to the screen to be destroyed. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{screen_8h_a5297c4c7c2e0bae983cad4339a543efc_cgraph}
+\end{center}
+\end{figure}

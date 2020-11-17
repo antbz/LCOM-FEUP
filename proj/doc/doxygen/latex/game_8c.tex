@@ -1,0 +1,325 @@
+\hypertarget{game_8c}{}\section{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/game.c File Reference}
+\label{game_8c}\index{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/game.\+c@{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/game.\+c}}
+{\ttfamily \#include \char`\"{}../headers/game.\+h\char`\"{}}\newline
+Include dependency graph for game.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{game_8c_a8e4f41d9fe634c39863954d74490074f}{main\+Menu\+Handler} (int dev)
+\begin{DoxyCompactList}\small\item\em Interrupt handler for main Menu. \end{DoxyCompactList}\item 
+void \hyperlink{game_8c_ab9425dfa11d5f49764746b3670cbd3b6}{single\+Player\+Menu\+Handler} (int dev)
+\begin{DoxyCompactList}\small\item\em Interrupt handler for single player mode. \end{DoxyCompactList}\item 
+void \hyperlink{game_8c_a0d2ebbf7353b134a4743b8d209c20b12}{single\+Player\+End\+Handler} (int dev)
+\begin{DoxyCompactList}\small\item\em Interrupt handler for single player end screen. \end{DoxyCompactList}\item 
+void \hyperlink{game_8c_aacf3ff3af8a592207d422440f5921b89}{help\+Handler} (int dev)
+\begin{DoxyCompactList}\small\item\em Interrupt handler for help screen. \end{DoxyCompactList}\item 
+void \hyperlink{game_8c_a6d44d81782d12027069bb5e04eb2eb00}{multi\+Player\+Handler} (int dev)
+\begin{DoxyCompactList}\small\item\em Interrupt handler for multi player. \end{DoxyCompactList}\item 
+void \hyperlink{game_8c_add1aee5c3912e6be8f942920ae83cae9}{spectator\+Handler} (int dev)
+\begin{DoxyCompactList}\small\item\em Interrupt handler for spectator. \end{DoxyCompactList}\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{game_8c_a1bf5813a33bf062c7e0ac95af442e41a}{load\+Main\+Screen} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{structScreen}{Screen} constructor for main menu. \end{DoxyCompactList}\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{game_8c_a4ad803c608996c82d21043e91f4d81ec}{load\+Single\+Player\+Screen} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{structScreen}{Screen} constructor for single palyer game. \end{DoxyCompactList}\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{game_8c_ac84a9b465ad4cf463622ab658cda7b73}{load\+Single\+Player\+End\+Screen} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{structScreen}{Screen} constructor for end screen. \end{DoxyCompactList}\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{game_8c_a62f4e2fda4beca3af3a7edd5415da1e8}{load\+Help\+Screen} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{structScreen}{Screen} constructor for help screen. \end{DoxyCompactList}\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{game_8c_a23f3019c26e624be6427b3729ec8f853}{load\+Multi\+Player\+Screen} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{structScreen}{Screen} constructor for multi player game (Player side). \end{DoxyCompactList}\item 
+\hyperlink{structScreen}{Screen} $\ast$ \hyperlink{game_8c_a6d3c6f011914ce84172b8d968338b921}{load\+Spectator\+Screen} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{structScreen}{Screen} constructor for multi player game (Spectator side). \end{DoxyCompactList}\item 
+void \hyperlink{game_8c_a1f5121701b8f4882c2a04d18a9ce2abb}{show\+\_\+score} ()
+\begin{DoxyCompactList}\small\item\em Displays the current score/combo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{game_8c_aacf3ff3af8a592207d422440f5921b89}\label{game_8c_aacf3ff3af8a592207d422440f5921b89}} 
+\index{game.\+c@{game.\+c}!help\+Handler@{help\+Handler}}
+\index{help\+Handler@{help\+Handler}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{help\+Handler()}{helpHandler()}}
+{\footnotesize\ttfamily void help\+Handler (\begin{DoxyParamCaption}\item[{int}]{dev }\end{DoxyParamCaption})}
+
+
+
+Interrupt handler for help screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev} & the device (device\+\_\+t) that called the interrupt. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_aacf3ff3af8a592207d422440f5921b89_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a62f4e2fda4beca3af3a7edd5415da1e8}\label{game_8c_a62f4e2fda4beca3af3a7edd5415da1e8}} 
+\index{game.\+c@{game.\+c}!load\+Help\+Screen@{load\+Help\+Screen}}
+\index{load\+Help\+Screen@{load\+Help\+Screen}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{load\+Help\+Screen()}{loadHelpScreen()}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen}$\ast$ load\+Help\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structScreen}{Screen} constructor for help screen. 
+
+\begin{DoxyReturn}{Returns}
+a pointer to the new screen created. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a62f4e2fda4beca3af3a7edd5415da1e8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a1bf5813a33bf062c7e0ac95af442e41a}\label{game_8c_a1bf5813a33bf062c7e0ac95af442e41a}} 
+\index{game.\+c@{game.\+c}!load\+Main\+Screen@{load\+Main\+Screen}}
+\index{load\+Main\+Screen@{load\+Main\+Screen}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{load\+Main\+Screen()}{loadMainScreen()}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen}$\ast$ load\+Main\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structScreen}{Screen} constructor for main menu. 
+
+\begin{DoxyReturn}{Returns}
+a pointer to the new screen created. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a1bf5813a33bf062c7e0ac95af442e41a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a23f3019c26e624be6427b3729ec8f853}\label{game_8c_a23f3019c26e624be6427b3729ec8f853}} 
+\index{game.\+c@{game.\+c}!load\+Multi\+Player\+Screen@{load\+Multi\+Player\+Screen}}
+\index{load\+Multi\+Player\+Screen@{load\+Multi\+Player\+Screen}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{load\+Multi\+Player\+Screen()}{loadMultiPlayerScreen()}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen}$\ast$ load\+Multi\+Player\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structScreen}{Screen} constructor for multi player game (Player side). 
+
+\begin{DoxyReturn}{Returns}
+a pointer to the new screen created. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a23f3019c26e624be6427b3729ec8f853_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_ac84a9b465ad4cf463622ab658cda7b73}\label{game_8c_ac84a9b465ad4cf463622ab658cda7b73}} 
+\index{game.\+c@{game.\+c}!load\+Single\+Player\+End\+Screen@{load\+Single\+Player\+End\+Screen}}
+\index{load\+Single\+Player\+End\+Screen@{load\+Single\+Player\+End\+Screen}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{load\+Single\+Player\+End\+Screen()}{loadSinglePlayerEndScreen()}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen}$\ast$ load\+Single\+Player\+End\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structScreen}{Screen} constructor for end screen. 
+
+\begin{DoxyReturn}{Returns}
+a pointer to the new screen created. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_ac84a9b465ad4cf463622ab658cda7b73_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a4ad803c608996c82d21043e91f4d81ec}\label{game_8c_a4ad803c608996c82d21043e91f4d81ec}} 
+\index{game.\+c@{game.\+c}!load\+Single\+Player\+Screen@{load\+Single\+Player\+Screen}}
+\index{load\+Single\+Player\+Screen@{load\+Single\+Player\+Screen}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{load\+Single\+Player\+Screen()}{loadSinglePlayerScreen()}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen}$\ast$ load\+Single\+Player\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structScreen}{Screen} constructor for single palyer game. 
+
+\begin{DoxyReturn}{Returns}
+a pointer to the new screen created. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a4ad803c608996c82d21043e91f4d81ec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a6d3c6f011914ce84172b8d968338b921}\label{game_8c_a6d3c6f011914ce84172b8d968338b921}} 
+\index{game.\+c@{game.\+c}!load\+Spectator\+Screen@{load\+Spectator\+Screen}}
+\index{load\+Spectator\+Screen@{load\+Spectator\+Screen}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{load\+Spectator\+Screen()}{loadSpectatorScreen()}}
+{\footnotesize\ttfamily \hyperlink{structScreen}{Screen}$\ast$ load\+Spectator\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{structScreen}{Screen} constructor for multi player game (Spectator side). 
+
+\begin{DoxyReturn}{Returns}
+a pointer to the new screen created. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a6d3c6f011914ce84172b8d968338b921_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a8e4f41d9fe634c39863954d74490074f}\label{game_8c_a8e4f41d9fe634c39863954d74490074f}} 
+\index{game.\+c@{game.\+c}!main\+Menu\+Handler@{main\+Menu\+Handler}}
+\index{main\+Menu\+Handler@{main\+Menu\+Handler}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{main\+Menu\+Handler()}{mainMenuHandler()}}
+{\footnotesize\ttfamily void main\+Menu\+Handler (\begin{DoxyParamCaption}\item[{int}]{dev }\end{DoxyParamCaption})}
+
+
+
+Interrupt handler for main Menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev} & the device (device\+\_\+t) that called the interrupt. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a8e4f41d9fe634c39863954d74490074f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a6d44d81782d12027069bb5e04eb2eb00}\label{game_8c_a6d44d81782d12027069bb5e04eb2eb00}} 
+\index{game.\+c@{game.\+c}!multi\+Player\+Handler@{multi\+Player\+Handler}}
+\index{multi\+Player\+Handler@{multi\+Player\+Handler}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{multi\+Player\+Handler()}{multiPlayerHandler()}}
+{\footnotesize\ttfamily void multi\+Player\+Handler (\begin{DoxyParamCaption}\item[{int}]{dev }\end{DoxyParamCaption})}
+
+
+
+Interrupt handler for multi player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev} & the device (device\+\_\+t) that called the interrupt. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a6d44d81782d12027069bb5e04eb2eb00_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a1f5121701b8f4882c2a04d18a9ce2abb}\label{game_8c_a1f5121701b8f4882c2a04d18a9ce2abb}} 
+\index{game.\+c@{game.\+c}!show\+\_\+score@{show\+\_\+score}}
+\index{show\+\_\+score@{show\+\_\+score}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{show\+\_\+score()}{show\_score()}}
+{\footnotesize\ttfamily void show\+\_\+score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the current score/combo. 
+
+Displays the player\textquotesingle{}s score and the last combo, if there was one. For use during game run. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a1f5121701b8f4882c2a04d18a9ce2abb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a0d2ebbf7353b134a4743b8d209c20b12}\label{game_8c_a0d2ebbf7353b134a4743b8d209c20b12}} 
+\index{game.\+c@{game.\+c}!single\+Player\+End\+Handler@{single\+Player\+End\+Handler}}
+\index{single\+Player\+End\+Handler@{single\+Player\+End\+Handler}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{single\+Player\+End\+Handler()}{singlePlayerEndHandler()}}
+{\footnotesize\ttfamily void single\+Player\+End\+Handler (\begin{DoxyParamCaption}\item[{int}]{dev }\end{DoxyParamCaption})}
+
+
+
+Interrupt handler for single player end screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev} & the device (device\+\_\+t) that called the interrupt. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a0d2ebbf7353b134a4743b8d209c20b12_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_ab9425dfa11d5f49764746b3670cbd3b6}\label{game_8c_ab9425dfa11d5f49764746b3670cbd3b6}} 
+\index{game.\+c@{game.\+c}!single\+Player\+Menu\+Handler@{single\+Player\+Menu\+Handler}}
+\index{single\+Player\+Menu\+Handler@{single\+Player\+Menu\+Handler}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{single\+Player\+Menu\+Handler()}{singlePlayerMenuHandler()}}
+{\footnotesize\ttfamily void single\+Player\+Menu\+Handler (\begin{DoxyParamCaption}\item[{int}]{dev }\end{DoxyParamCaption})}
+
+
+
+Interrupt handler for single player mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev} & the device (device\+\_\+t) that called the interrupt. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_ab9425dfa11d5f49764746b3670cbd3b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_add1aee5c3912e6be8f942920ae83cae9}\label{game_8c_add1aee5c3912e6be8f942920ae83cae9}} 
+\index{game.\+c@{game.\+c}!spectator\+Handler@{spectator\+Handler}}
+\index{spectator\+Handler@{spectator\+Handler}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{spectator\+Handler()}{spectatorHandler()}}
+{\footnotesize\ttfamily void spectator\+Handler (\begin{DoxyParamCaption}\item[{int}]{dev }\end{DoxyParamCaption})}
+
+
+
+Interrupt handler for spectator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev} & the device (device\+\_\+t) that called the interrupt. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_add1aee5c3912e6be8f942920ae83cae9_cgraph}
+\end{center}
+\end{figure}

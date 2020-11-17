@@ -1,0 +1,91 @@
+\hypertarget{rtc_8c}{}\section{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/rtc.c File Reference}
+\label{rtc_8c}\index{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/rtc.\+c@{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/src/rtc.\+c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../headers/rtc.\+h\char`\"{}}\newline
+Include dependency graph for rtc.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{rtc_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{rtc_8c_a10955a7f54931b66c81bec3675a0d116}{subscribe\+\_\+rtc} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes R\+TC\textquotesingle{}s interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{rtc_8c_a5044355ac16d65a75a879527aef33781}{unsubscribe\+\_\+rtc} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes R\+TC\textquotesingle{}s interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{rtc_8c_a334675ca0bb5774edf48f71353539242}{rtc\+\_\+generate\+\_\+seed} ()
+\begin{DoxyCompactList}\small\item\em Creates a seed to generate random numbers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{rtc_8c_aa65c79eb31599d4859f7d2a32a846fa2}{rtc\+\_\+hookid} = 4
+\item 
+int \hyperlink{rtc_8c_ab58df36fd429cab6ab2f2dedd531f7a9}{rand\+\_\+seed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{rtc_8c_a334675ca0bb5774edf48f71353539242}\label{rtc_8c_a334675ca0bb5774edf48f71353539242}} 
+\index{rtc.\+c@{rtc.\+c}!rtc\+\_\+generate\+\_\+seed@{rtc\+\_\+generate\+\_\+seed}}
+\index{rtc\+\_\+generate\+\_\+seed@{rtc\+\_\+generate\+\_\+seed}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+generate\+\_\+seed()}{rtc\_generate\_seed()}}
+{\footnotesize\ttfamily void rtc\+\_\+generate\+\_\+seed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a seed to generate random numbers. 
+
+Reads the hours, minutes and seconds from the R\+TC and adds the three values to global variable rand\+\_\+seed, checking register A to see if there is an update in progress. \mbox{\Hypertarget{rtc_8c_a10955a7f54931b66c81bec3675a0d116}\label{rtc_8c_a10955a7f54931b66c81bec3675a0d116}} 
+\index{rtc.\+c@{rtc.\+c}!subscribe\+\_\+rtc@{subscribe\+\_\+rtc}}
+\index{subscribe\+\_\+rtc@{subscribe\+\_\+rtc}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{subscribe\+\_\+rtc()}{subscribe\_rtc()}}
+{\footnotesize\ttfamily int subscribe\+\_\+rtc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes R\+TC\textquotesingle{}s interrupts. 
+
+Subscribes R\+TC\textquotesingle{}s interrupt notifications using sys\+\_\+irqsetpolicy().
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & pointer to the hook\+\_\+id returned by the kernel in sys\+\_\+irqsetpolicy(). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rtc_8c_a5044355ac16d65a75a879527aef33781}\label{rtc_8c_a5044355ac16d65a75a879527aef33781}} 
+\index{rtc.\+c@{rtc.\+c}!unsubscribe\+\_\+rtc@{unsubscribe\+\_\+rtc}}
+\index{unsubscribe\+\_\+rtc@{unsubscribe\+\_\+rtc}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{unsubscribe\+\_\+rtc()}{unsubscribe\_rtc()}}
+{\footnotesize\ttfamily int unsubscribe\+\_\+rtc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes R\+TC\textquotesingle{}s interrupts. 
+
+Unsubscribes R\+TC\textquotesingle{}s interrupt notifications using sys\+\_\+irqrmpolicy().
+
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{rtc_8c_ab58df36fd429cab6ab2f2dedd531f7a9}\label{rtc_8c_ab58df36fd429cab6ab2f2dedd531f7a9}} 
+\index{rtc.\+c@{rtc.\+c}!rand\+\_\+seed@{rand\+\_\+seed}}
+\index{rand\+\_\+seed@{rand\+\_\+seed}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{rand\+\_\+seed}{rand\_seed}}
+{\footnotesize\ttfamily int rand\+\_\+seed}
+
+\mbox{\Hypertarget{rtc_8c_aa65c79eb31599d4859f7d2a32a846fa2}\label{rtc_8c_aa65c79eb31599d4859f7d2a32a846fa2}} 
+\index{rtc.\+c@{rtc.\+c}!rtc\+\_\+hookid@{rtc\+\_\+hookid}}
+\index{rtc\+\_\+hookid@{rtc\+\_\+hookid}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+hookid}{rtc\_hookid}}
+{\footnotesize\ttfamily int rtc\+\_\+hookid = 4}
+

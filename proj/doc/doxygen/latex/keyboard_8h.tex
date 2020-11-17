@@ -1,0 +1,156 @@
+\hypertarget{keyboard_8h}{}\section{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/headers/keyboard.h File Reference}
+\label{keyboard_8h}\index{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/headers/keyboard.\+h@{/home/antonio/\+F\+E\+U\+P/2\+\_\+ano/1\+\_\+sem/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/headers/keyboard.\+h}}
+
+
+Functions to interface with the PC\textquotesingle{}s keyboard controller.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/utils.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}kbd\+\_\+defs.\+h\char`\"{}}\newline
+Include dependency graph for keyboard.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \hyperlink{keyboard_8h_a15cd0b00a8f834d25bbd39ea9c0519ea}{subscribe\+\_\+kbc} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes keyboard\textquotesingle{}s interrupts. \end{DoxyCompactList}\item 
+int() \hyperlink{keyboard_8h_a73757077133b7fe559d036ce133bcda5}{unsubscribe\+\_\+kbc} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes keyboard\textquotesingle{}s interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{keyboard_8h_acf925ef53bcf49cda319a48d33b825e4}{kbc\+\_\+cmd\+\_\+read} (uint8\+\_\+t $\ast$out)
+\begin{DoxyCompactList}\small\item\em Reads command byte. \end{DoxyCompactList}\item 
+int \hyperlink{keyboard_8h_a9878df655d523f5c58423d305a912336}{kbc\+\_\+cmd\+\_\+write} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Writes command. \end{DoxyCompactList}\item 
+int \hyperlink{keyboard_8h_a9d17da4ed398d7cd4b3462ec31585cce}{kbd\+\_\+get\+\_\+status\+\_\+byte} (bool $\ast$preserve)
+\begin{DoxyCompactList}\small\item\em Reads the K\+BC state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to interface with the PC\textquotesingle{}s keyboard controller. 
+
+File containing the functions to subscribe and handle the keyboard\textquotesingle{}s interruptions. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{keyboard_8h_acf925ef53bcf49cda319a48d33b825e4}\label{keyboard_8h_acf925ef53bcf49cda319a48d33b825e4}} 
+\index{keyboard.\+h@{keyboard.\+h}!kbc\+\_\+cmd\+\_\+read@{kbc\+\_\+cmd\+\_\+read}}
+\index{kbc\+\_\+cmd\+\_\+read@{kbc\+\_\+cmd\+\_\+read}!keyboard.\+h@{keyboard.\+h}}
+\subsubsection{\texorpdfstring{kbc\+\_\+cmd\+\_\+read()}{kbc\_cmd\_read()}}
+{\footnotesize\ttfamily int kbc\+\_\+cmd\+\_\+read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+Reads command byte. 
+
+Writes K\+BC command 0x20 to port 0x64, reading the byte in the output buffer to uint8\+\_\+t$\ast$ out.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & pointer to where to store the command byte read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{keyboard_8h_acf925ef53bcf49cda319a48d33b825e4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8h_a9878df655d523f5c58423d305a912336}\label{keyboard_8h_a9878df655d523f5c58423d305a912336}} 
+\index{keyboard.\+h@{keyboard.\+h}!kbc\+\_\+cmd\+\_\+write@{kbc\+\_\+cmd\+\_\+write}}
+\index{kbc\+\_\+cmd\+\_\+write@{kbc\+\_\+cmd\+\_\+write}!keyboard.\+h@{keyboard.\+h}}
+\subsubsection{\texorpdfstring{kbc\+\_\+cmd\+\_\+write()}{kbc\_cmd\_write()}}
+{\footnotesize\ttfamily int kbc\+\_\+cmd\+\_\+write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command }\end{DoxyParamCaption})}
+
+
+
+Writes command. 
+
+Writes K\+BC command 0x60 to port 0x64, and then writes the new value of the command byte to port 0x60.
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & command byte to be written. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_a9d17da4ed398d7cd4b3462ec31585cce}\label{keyboard_8h_a9d17da4ed398d7cd4b3462ec31585cce}} 
+\index{keyboard.\+h@{keyboard.\+h}!kbd\+\_\+get\+\_\+status\+\_\+byte@{kbd\+\_\+get\+\_\+status\+\_\+byte}}
+\index{kbd\+\_\+get\+\_\+status\+\_\+byte@{kbd\+\_\+get\+\_\+status\+\_\+byte}!keyboard.\+h@{keyboard.\+h}}
+\subsubsection{\texorpdfstring{kbd\+\_\+get\+\_\+status\+\_\+byte()}{kbd\_get\_status\_byte()}}
+{\footnotesize\ttfamily int kbd\+\_\+get\+\_\+status\+\_\+byte (\begin{DoxyParamCaption}\item[{bool $\ast$}]{preserve }\end{DoxyParamCaption})}
+
+
+
+Reads the K\+BC state. 
+
+Reads the byte in the status register (port 0x64) and checks if it\textquotesingle{}s valid. Discards the value read if the parity, timeout or aux bits are set and checks the obf bit to see if there is data available for reading from the buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em preserve} & bool that gets if what\textquotesingle{}s read is in a valid state or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{keyboard_8h_a9d17da4ed398d7cd4b3462ec31585cce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8h_a15cd0b00a8f834d25bbd39ea9c0519ea}\label{keyboard_8h_a15cd0b00a8f834d25bbd39ea9c0519ea}} 
+\index{keyboard.\+h@{keyboard.\+h}!subscribe\+\_\+kbc@{subscribe\+\_\+kbc}}
+\index{subscribe\+\_\+kbc@{subscribe\+\_\+kbc}!keyboard.\+h@{keyboard.\+h}}
+\subsubsection{\texorpdfstring{subscribe\+\_\+kbc()}{subscribe\_kbc()}}
+{\footnotesize\ttfamily int() subscribe\+\_\+kbc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes keyboard\textquotesingle{}s interrupts. 
+
+Subscribes keyboard\textquotesingle{}s interrupt notifications using sys\+\_\+irqsetpolicy().
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & pointer to the hook\+\_\+id returned by the kernel in sys\+\_\+irqsetpolicy(). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_a73757077133b7fe559d036ce133bcda5}\label{keyboard_8h_a73757077133b7fe559d036ce133bcda5}} 
+\index{keyboard.\+h@{keyboard.\+h}!unsubscribe\+\_\+kbc@{unsubscribe\+\_\+kbc}}
+\index{unsubscribe\+\_\+kbc@{unsubscribe\+\_\+kbc}!keyboard.\+h@{keyboard.\+h}}
+\subsubsection{\texorpdfstring{unsubscribe\+\_\+kbc()}{unsubscribe\_kbc()}}
+{\footnotesize\ttfamily int() unsubscribe\+\_\+kbc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes keyboard\textquotesingle{}s interrupts. 
+
+Unsubscribes keyboard\textquotesingle{}s interrupt notifications using sys\+\_\+irqrmpolicy().
+
+\begin{DoxyReturn}{Returns}
+0 if the operation was successful, 1 otherwise. 
+\end{DoxyReturn}
